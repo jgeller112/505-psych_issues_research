@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PSYCH 505: Research Issues and Practices</title>
+    <title>PSY 505: Research Issues and Practices</title>
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    <description>PSYCH 505: Research Issues and Practices</description>
+    <description>PSY 505: Research Issues and Practices</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 05 May 2019 00:00:00 +0100</lastBuildDate>
     <image>
       <url>/img/cogsciimage.jpeg</url>
-      <title>PSYCH 505: Research Issues and Practices</title>
+      <title>PSY 505: Research Issues and Practices</title>
       <link>/</link>
     </image>
     
@@ -274,6 +274,262 @@
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       <guid>/post/01-week/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Schedule</title>
+      <link>/schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/schedule/</guid>
+      <description>
+&lt;script src=&#34;/schedule/index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Here’s the roadmap for the semester.&lt;/p&gt;
+&lt;ul class=&#34;icon-list&#34;&gt;
+&lt;li&gt;
+&lt;i class=&#34;fas fa-book-reader&#34;&gt;&lt;/i&gt; Readings should be completed &lt;strong&gt;&lt;em&gt;before&lt;/em&gt;&lt;/strong&gt; each class session
+&lt;/li&gt;
+&lt;li&gt;
+&lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt; Slides and other class materials will be added on the day of class
+&lt;/li&gt;
+&lt;li&gt;
+&lt;i class=&#34;fas fa-keyboard&#34;&gt;&lt;/i&gt; Assignments are due at noon on the day they are due (unless otherwise stated)
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;table class=&#34;table schedule&#34; style=&#34;max-width:100%&#34;&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;&lt;span class=&#34;fake-header-table&#34;&gt;Research Issues and Practices&lt;/span&gt;&lt;/td&gt;
+
+            &lt;td style=&#34;width:5%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Reading&lt;/td&gt;
+            &lt;td style=&#34;width:5%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Slides&lt;/td&gt;
+             &lt;td style=&#34;width:5%;text-align:center&#34; class=&#34;mid-table-header&#34;&gt;Assignment&lt;/td&gt;
+
+            &lt;td style=&#34;width:40%;text-align:left&#34; class=&#34;mid-table-header&#34;&gt;Notes&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 1 [T, 9/06]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Introduction to the course&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+              &lt;td style=&#34;width:100%;text-align:left&#34;&gt;Welcome! Please complete the &lt;a href = &#34;https://docs.google.com/forms/d/e/1FAIpQLSfLhhG-tKtUbqJyFMfW_Vc-sueswR6TzmKr0R5TJs7Z4EJVSg/viewform?usp=sf_link&#34;&gt;class survey&lt;/a&gt;.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;[T]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Install R and RStudio&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+              &lt;td style=&#34;width:100%;text-align:left&#34;&gt;Prior to lab, please install &lt;a href = &#34;https://vimeo.com/203516510&#34;&gt;R&lt;/a&gt;, &lt;a href = &#34;https://vimeo.com/203516968&#34;&gt;RStudio&lt;/a&gt; and the &lt;a href = &#34;https://vimeo.com/203516241&#34;&gt;tidyverse package&lt;/a&gt;.  &lt;a href = &#34;https://rstudio.cloud/learn/primers/1.2&#34;&gt;[in class tutorial]&lt;/a&gt;  &lt;a href = &#34;https://www.rstudio.com/resources/cheatsheets/&#34;&gt;[cheatsheets]&lt;/a&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 2 [T, 9/13]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Tutorial: Introduction to R/Markdown/Papaja&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 3 [T, 9/20]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Seminar: Robert Calin-Jageman, Ph.D. (Dominican University)&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+              &lt;td style=&#34;width:100%;text-align:left&#34;&gt;Prior to the talk Bob will lead a short workshop on ESCI in R and JAMOVI&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 4 [T, 9/27]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Tutorial: Data Wrangling in R&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 5 [T, 10/04]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Seminar: Daniël Lakens, Ph.D. (Eindhoven University of Technology)&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 6 [T, 10/11]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Seminar: Ulrich Schimmack, Ph.D. (University of Toronto Mississauga)&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 7 [T, 10/18]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Break (No Class)&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+               &lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 8 [T, 10/25]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Discussion: Open Science and Replication/Reproducibility&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;far fa-keyboard fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+              &lt;td style=&#34;width:100%;text-align:left&#34;&gt;In class we will fill out preregistration&#39;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 9 [T, 11/01]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Seminar: Bob McMurrary (The University of Iowa)&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;far fa-keyboard fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 10 [T, 11/08]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Seminar: Erin Buchanan, Ph.D. (Harrisburg University of Science and Technology)&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;far fa-keyboard fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 11 [T, 11/15]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Antoine Coutrot, Ph.D.(French National Centre for Scientific Research)&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;fas fa-tv&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+                  &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+                &lt;i class=&#34;far fa-keyboard fa-lg&#34;&gt;&lt;/i&gt;&lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 12 [T, 11/22]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Thanksgiving Break&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+               &lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 13 [T, 11/29]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Tutorial: Data Visualization in R&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+               &lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td align=&#34;right&#34; style=&#34;width:20%;text-align:right&#34;&gt;Week 14 [T, 12/6]&lt;/td&gt;
+            &lt;td style=&#34;width:25%;text-align:left&#34;&gt;Discussion: Computational Reproducibility&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:5%;text-align:center&#34;&gt;&lt;font color=&#34;a9a9a9&#34;&gt;
+               &lt;/font&gt;&lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:10%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+            &lt;td align=&#34;center&#34; style=&#34;width:100%;text-align:center&#34;&gt;
+              
+            &lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+
+&lt;/table&gt;
+
+&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This is a tentative schedule, and details may change as the semester progresses.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

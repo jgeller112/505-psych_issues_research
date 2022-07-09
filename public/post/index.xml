@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts | Research Methods in Cognitive Science</title>
+    <title>Posts | PSY 505: Research Issues and Practices</title>
     <link>/post/</link>
       <atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Posts</description>
@@ -17,102 +17,6 @@
       <link>/post/01-week/</link>
       <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
       <guid>/post/01-week/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>02-Week</title>
-      <link>/post/02-week/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/02-week/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>02-Week</title>
-      <link>/post/02-weekethics/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/02-weekethics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>04-Week</title>
-      <link>/post/04-replication/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/04-replication/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>04-Week</title>
-      <link>/post/04-weekopenscience/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/04-weekopenscience/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>05-Week</title>
-      <link>/post/05-week/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/05-week/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>05-Week</title>
-      <link>/post/05-weekexperiments/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/05-weekexperiments/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>06-Week</title>
-      <link>/post/06-week/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/06-week/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>07-Week</title>
-      <link>/post/07-week/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/07-week/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>08-Week</title>
-      <link>/post/08-week/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/08-week/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>09-Week</title>
-      <link>/post/09-week/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/09-week/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>10-Week</title>
-      <link>/post/10-week/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/10-week/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>11-Week</title>
-      <link>/post/11-week/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
-      <guid>/post/11-week/</guid>
       <description></description>
     </item>
     
