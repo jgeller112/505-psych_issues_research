@@ -211,7 +211,7 @@ x + 7
 
 # Vectors
 
-- Using multipe numbers at once
+- Using multiple numbers at once
 
 ```{r}
 
