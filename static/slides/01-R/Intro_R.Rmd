@@ -102,8 +102,6 @@ knitr::include_graphics("lover.png")
 
 # I know it is scary
 
-
-
 ```{r, fig.align='center', echo=FALSE, warning=FALSE,  out.width = "65%"}
 
 knitr::include_graphics("nocluedog.png")
@@ -182,7 +180,7 @@ background-size: cover
 
 ---
 
-# Variables/Objects
+# Assignment of Variables
 
 - A variable is a symbol that stands for another value (just like “X” in algebra)
 
@@ -211,23 +209,61 @@ x + 7
 
 # Vectors
 
-- Using multiple numbers at once
+- Allows multiple types of classes to be concatenated together
+
+    -  Numeric 
 
 ```{r}
 
-x = c(2,6,16)
+x <-  c(2,6,16)
 
 x
 
 ```
 
+    - `x` here is called an object
 --
+ - Logical (TRUE/FALSE)
+ 
+```{r}
+x[1]==2
+```
 
-- Index one number
+---
+
+# Vectors
+
+- Character
+    
+```{r}
+x <- c("cat", "bat")
+
+gender <- c("male", "female")
+```
+
+- Factors
+
+- Turn character strings into specific categories
 
 ```{r}
 
-x[1]
+gender <- as.factor(gender)
+
+gender
+
+```
+
+---
+# Indexing
+
+- Vectors can be indexed 
+
+```{r}
+
+x[1] # retreve first
+x[2] # retreive second
+
+x[-2] # everythin but that numbe 
 
 
 
@@ -245,11 +281,20 @@ x
 
 ---
 
+# Vectors
 
+- Logical vectors
+
+```{r}
+
+x==7
+
+```
+
+---
 # R as a Calculator
 
 - Typing in a simple calculation show us the result
-
 
 ```{r}
 608+ 28
@@ -285,10 +330,6 @@ x
 # in parenthesis: what we want to perform function on
 sqrt(64)
 ```
-
-  - Read left to right
-
-+ What do you think `abs(-7)` does?
 
 ```{r, eval=FALSE}
 
@@ -454,7 +495,6 @@ a %>%
 ---
 # Multiple Functions
 
-
 - Pipe operator makes it easy to do multiple functions in a row
 
 
@@ -489,26 +529,18 @@ a %>%
 
 # Reading in Data
 
+
 - Download the file
 
-```{r, eval=FALSE}
+```{r,echo=FALSE, warning=FALSE,  out.width = "100%"}
 
-
-# read in csv file
-fac<- read.csv(file.choose())
-
-fac<- read.csv("path_to_file")
-
-
+knitr::include_graphics("readr.png")
 ```
-
 - General form: dataframe.name <-read.csv('filename')
-
-
 ---
-# Data Frames and Tibbles
+# Data Frames
 
-- In a dataset we will have a number of variables to work with. 
+> A data frame is like an Excel spreadsheet. It is two-dimensional with rows and columns. 
 
   - Instead of creating a number of vectors we store all the vectors into a single DF
   
@@ -521,12 +553,30 @@ car_model <- c("Ford Fusion", "Hyundai Accent", "Toyota Corolla")
 car_price <- c(25000, 16000, 18000)
 car_mileage <- c(27, 36, 32)
 
+cars_df <- data.frame(model=car_model, price=car_price, mileage=car_mileage)
+
+flextable::flextable(cars_df)%>% flextable::autofit()
+
+
 ```
 
+---
 
-```{r}
+# Tibbles
 
-cars_df <- data.frame(model=car_model, price=car_price, mileage=car_mileage)
+- More modern take on Data frames
+
+  - Never changes input's type
+  - Never adjusts the names of variables
+  - It evaluates arguments lazily and sequentially
+  
+- Differences 
+  - Printing
+  
+```{r, eval=FALSE}
+
+as.tibble()
+
 
 ```
 ---
@@ -556,11 +606,9 @@ here::here()
 ```
 
 ---
-
-
 # Loading the Data
 
-- Disclaimer: `Create new project folder first, open up R second`
+> Disclaimer: `Create new project folder first, open up R second`
 
 The faculty dataset contains aggregated data per faculty:
 
@@ -585,7 +633,7 @@ fac
 ```
 
 ---
-# Looking at the Data 
+# Looking at Data 
 
 ```{r}
 
@@ -594,7 +642,8 @@ fac%>%
 
 ```
 
-
+---
+# Looking at Data
 ```{r}
 
 library(skimr)
@@ -629,29 +678,17 @@ fac%>%
 
 # Looking at the Data
 
-- Whole data frame
+- Whole dataset
+- First 6 observations
+- Last 6 observations
 
 ```{r}
 
-fac
-
-
-```
-
-- fist 6 rows
-
-```{r}
+fac # whole dataset
 
 head(fac)
-
-```
-
-- last 6 rows
-
-
-```{r}
-
 tail(fac)
+
 
 ```
 

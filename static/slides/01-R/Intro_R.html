@@ -4,8 +4,9 @@
     <title>Research Issues and Practices in Psychology</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jason Geller, Ph.D" />
-    <meta name="date" content="2022-07-12" />
+    <meta name="date" content="2022-07-14" />
     <script src="Intro_R_files/header-attrs/header-attrs.js"></script>
+    <link href="Intro_R_files/tabwid/tabwid.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -15,7 +16,7 @@ class: center, middle, inverse, title-slide
 # Research Issues and Practices in Psychology
 ## Week 1: Gentle R Introduction
 ### Jason Geller, Ph.D
-### 2022-07-12
+### 2022-07-14
 
 ---
 
@@ -48,8 +49,6 @@ class: center, middle, inverse, title-slide
 ---
 
 # I know it is scary
-
-
 
 &lt;img src="nocluedog.png" width="65%" style="display: block; margin: auto;" /&gt;
 ---
@@ -126,7 +125,7 @@ background-size: cover
 
 ---
 
-# Variables/Objects
+# Assignment of Variables
 
 - A variable is a symbol that stands for another value (just like “X” in algebra)
 
@@ -162,11 +161,13 @@ x + 7
 
 # Vectors
 
-- Using multiple numbers at once
+- Allows multiple types of classes to be concatenated together
+
+    -  Numeric 
 
 
 ```r
-x = c(2,6,16)
+x &lt;-  c(2,6,16)
 
 x
 ```
@@ -175,17 +176,75 @@ x
 ## [1]  2  6 16
 ```
 
+    - `x` here is called an object
 --
+ - Logical (TRUE/FALSE)
+ 
 
-- Index one number
+```r
+x[1]==2
+```
+
+```
+## [1] TRUE
+```
+
+---
+
+# Vectors
+
+- Character
+    
+
+```r
+x &lt;- c("cat", "bat")
+
+gender &lt;- c("male", "female")
+```
+
+- Factors
+
+- Turn character strings into specific categories
 
 
 ```r
-x[1]
+gender &lt;- as.factor(gender)
+
+gender
 ```
 
 ```
-## [1] 2
+## [1] male   female
+## Levels: female male
+```
+
+---
+# Indexing
+- Vectors can be indexed 
+
+
+```r
+x[1] # retreve first
+```
+
+```
+## [1] "cat"
+```
+
+```r
+x[2] # retreive second
+```
+
+```
+## [1] "bat"
+```
+
+```r
+x[-2] # everythin but that numbe 
+```
+
+```
+## [1] "cat"
 ```
 --
 
@@ -199,12 +258,19 @@ x
 ```
 
 ```
-## [1]  7  6 16
+## [1] "7"   "bat"
 ```
 
 ---
 
+# Vectors
 
+- Logical vectors
+
+
+
+---
+# Ch
 # R as a Calculator
 
 - Typing in a simple calculation show us the result
@@ -486,7 +552,7 @@ fac&lt;- read.csv("path_to_file")
 ---
 # Data Frames and Tibbles
 
-- In a dataset we will have a number of variables to work with. 
+&gt; A data frame is a spreadsheet. It is two-dimensional with rows and columns. 
 
   - Instead of creating a number of vectors we store all the vectors into a single DF
   
@@ -504,7 +570,61 @@ car_mileage &lt;- c(27, 36, 32)
 
 ```r
 cars_df &lt;- data.frame(model=car_model, price=car_price, mileage=car_mileage)
+
+flextable::flextable(cars_df)%&gt;% flextable::autofit()
 ```
+
+
+&lt;template id="ae3d8d7c-374b-4f4c-a3c0-6570b1ef7375"&gt;&lt;style&gt;
+.tabwid table{
+  border-spacing:0px !important;
+  border-collapse:collapse;
+  line-height:1;
+  margin-left:auto;
+  margin-right:auto;
+  border-width: 0;
+  display: table;
+  margin-top: 1.275em;
+  margin-bottom: 1.275em;
+  border-color: transparent;
+}
+.tabwid_left table{
+  margin-left:0;
+}
+.tabwid_right table{
+  margin-right:0;
+}
+.tabwid td {
+    padding: 0;
+}
+.tabwid a {
+  text-decoration: none;
+}
+.tabwid thead {
+    background-color: transparent;
+}
+.tabwid tfoot {
+    background-color: transparent;
+}
+.tabwid table tr {
+background-color: transparent;
+}
+&lt;/style&gt;&lt;div class="tabwid"&gt;&lt;style&gt;.cl-8ef9e838{}.cl-8ef28ebc{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-8ef2a7ee{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-8ef2a7f8{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-8ef2dbf6{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc00{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc0a{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc0b{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc14{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc15{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc16{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc17{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc1e{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc1f{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc20{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc28{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}&lt;/style&gt;&lt;table class='cl-8ef9e838'&gt;&lt;thead&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-8ef2dc28"&gt;&lt;p class="cl-8ef2a7ee"&gt;&lt;span class="cl-8ef28ebc"&gt;model&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc1f"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;price&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc20"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;mileage&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-8ef2dc0a"&gt;&lt;p class="cl-8ef2a7ee"&gt;&lt;span class="cl-8ef28ebc"&gt;Ford Fusion&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc00"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;25,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dbf6"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;27&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-8ef2dc14"&gt;&lt;p class="cl-8ef2a7ee"&gt;&lt;span class="cl-8ef28ebc"&gt;Hyundai Accent&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc15"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;16,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc0b"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;36&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-8ef2dc16"&gt;&lt;p class="cl-8ef2a7ee"&gt;&lt;span class="cl-8ef28ebc"&gt;Toyota Corolla&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc17"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;18,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc1e"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;32&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/template&gt;
+&lt;div class="flextable-shadow-host" id="04c62ee3-f77b-4a4d-bd48-b56fc6d7a7ed"&gt;&lt;/div&gt;
+&lt;script&gt;
+var dest = document.getElementById("04c62ee3-f77b-4a4d-bd48-b56fc6d7a7ed");
+var template = document.getElementById("ae3d8d7c-374b-4f4c-a3c0-6570b1ef7375");
+var caption = template.content.querySelector("caption");
+if(caption) {
+  caption.style.cssText = "display:block;text-align:center;";
+  var newcapt = document.createElement("p");
+  newcapt.appendChild(caption)
+  dest.parentNode.insertBefore(newcapt, dest.previousSibling);
+}
+var fantome = dest.attachShadow({mode: 'open'});
+var templateContent = template.content;
+fantome.appendChild(templateContent);
+&lt;/script&gt;
 ---
 
 # `Here` package
