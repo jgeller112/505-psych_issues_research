@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts | PSY 505: Research Issues and Practices</title>
+    <link>/syllabus/</link>
+      <atom:link href="/syllabus/index.xml" rel="self" type="application/rss+xml" />
+    <description>Posts</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <image>
+      <url>/img/cogsciimage.jpeg</url>
+      <title>Posts</title>
+      <link>/syllabus/</link>
+    </image>
+    
+  </channel>
+</rss>
