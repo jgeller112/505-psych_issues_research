@@ -45,7 +45,7 @@ Much of the material needed for the course will be available on Canvas. I will a
 
 # Assignments and Grades
 
-## Discussion Reflections (60%)
+## Speaker Reflections (60%)
 
 We have a several guest lectures over the course of the semester. You will get points for attending these talks and submitting a reflection for each talk/presentation (500-1000 words). Reflections will be due on the Friday by 4:00 P.M after the talk.These must be submitted via Canvas. The purpose of the response is to get you thinking about the content at a higher-level.
  
@@ -63,11 +63,9 @@ There is no final exam. This project is your final exam.
 ```{r assignments-grades, include=FALSE}
 assignments <- tribble(
   ~Points,  ~Assignment,
-  25      , "Participation",
-  5*9, "Quizzes [9 x 5 pts.]",
-  7 * 35  , "Lab Assignments [7 x 35 pts.]",
-  85     , "Midterm",
-  100, "Final Meta-analysis Project [Presentation = 50; Writeup = 50]",
+  5*6      , "Speaker Reflections",
+  50, "Tutorial",
+  20  , "Discussion Questions",
 ) %>%
   mutate(Percent = Points / sum(Points),
          Percent = scales::percent(Percent)) 
