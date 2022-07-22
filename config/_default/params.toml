@@ -80,7 +80,10 @@ edit_page = {repo_url = "https://github.com/jgeller112/", content_dir = "https:/
 ## Additionally, for organizations, these details may be used to enrich search engine results.
 ############################
 
-# Enter contact details (optional). To hide a field, clear it to "".
+
+############################
+## Social
+############################
 email = "jg9120@princeton.edu"
 phone = "888 888 88 88"
 
@@ -171,7 +174,7 @@ plugins_js  = []
   gravatar = false
 
   # Choose a shape for avatar images. Options: circle, square.
-  shape = "circle"
+  shape = "square"
 
 # Available address formats.
 [address_formats]

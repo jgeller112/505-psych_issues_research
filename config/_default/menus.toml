@@ -19,7 +19,7 @@
 
 [[main]]
   name = "Syllabus"
-  url = "#syllabus"
+  url = "/syllabus/"
   weight = 40
   
 [[main]]
