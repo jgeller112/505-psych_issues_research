@@ -13,7 +13,7 @@ library(tidyverse)
 library(pander)
 ```
 
- Objectives
+# Objectives
 
 Psychological methods keep evolving: psychology researchers constantly adopt new statistical methods, computational tools, and research practices. This course introduces the latest advances in research methods in psychological science through a series of discussions, tutorials, and seminars. Lectures are generally given by a guest speaker who introduces methodological and statistical issues relevant to psychology research. Tutorials provide students with the necessary skills to build reproducible and transparent research programs. For instance, students learn how to use R, RMarkdown and Git/GitHub, or how to preregister their studies. Finally, students take part in seminars, in which they discuss timely topics in psychological methods (e.g., reproducibility, transparency, pre-registration).
 
@@ -29,7 +29,7 @@ This is a graduate-level course. Any graduate students in psychology can attend.
 
 We will meet once a week throughout the semester. The format will depend on the topic and the objective of the class. In this course, students will attend: i) discussions, ii) seminars, and iii) tutorials.
 
--   **Discussions.** Students will participate in discussions on various research issues. We will have several articles to discuss. On these days you must prepare 2-4 discussion questions based on the journal article assigned for the date. These questions should highlight important points of the reading as well as demonstrate understanding of the methodology and primary findings of the articles.
+-   **Discussions.** Students will participate in discussions on various research issues. We will have several articles to discuss. 
 -   **Guest Seminars.** Students will attend a series of lectures during the semester. Lectures may introduce a recent methodological contribution or discuss a controversial and easily overlooked issue regarding the application or interpretation of statistics. Lectures will be given by guest speakers who are expert in the topic.
 -   **Tutorials.** Students will learn skills to build reproducible and transparent research programs. These tutorials may teach students how to preregister their studies, run power analyses, and organize their code with Notebooks). Tutorials may be given by guest speakers who are expert in the topic.
 
@@ -43,7 +43,7 @@ Much of the material needed for the course will be available on Canvas. I will a
 
 # Grading
 
-# Assignments and Grades
+# Assignments
 
 ## Speaker Reflections (60%)
 
@@ -51,14 +51,18 @@ We have a several guest lectures over the course of the semester. You will get p
  
 Discussion questions may address relevance of the article's findings or conclusions to your own practice or future work, and/or connections to other readings in the course or readings from other courses. You will be asked to lead class discussion utilizing these questions. Selected students will turn in a written copy of their questions for grading at the end of the class discussion. Grade on this assignment is based on the content of the questions as well as the discussion lead in class.
 
+## Discussion Questions (20%)
+
+On discussion days you must prepare 2-4 discussion questions based on the journal article assigned for the date. These questions should highlight important points of the reading as well as demonstrate understanding of the methodology and primary findings of the articles.
+
 
 ##  Tutorial (40%)
 
-For your final project you will create a tutorial about how to something in R.The final project gives you a chance to pursue any topic in the R universe and learn more about it. For example, you could choose to write a tutorial on any R package or how to perform a statistical analysis.
+For your final project you will create a tutorial about how to do something in R.The final project gives you a chance to pursue any topic in the R universe and learn more about it. For example, you could choose to write a tutorial on any R package or how to perform a statistical analysis.
 
 There is no final exam. This project is your final exam.
 
-## Assignment Grades
+# Grades
 
 ```{r assignments-grades, include=FALSE}
 assignments <- tribble(
