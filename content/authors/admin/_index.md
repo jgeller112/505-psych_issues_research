@@ -3,11 +3,11 @@ authors:
 - admin
 bio: 
     scientists
-email: ""
+email: "drjasongeller@gmail.com"
 name: null
 organizations:
-- name: Rutgers University 
-  url: https://www.rutgers.edu
+- name: Princeton University
+  url: www.princeton.edu
 role: null
 superuser: true
 user_groups:
