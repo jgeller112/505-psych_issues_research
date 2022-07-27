@@ -6,8 +6,8 @@ lessons:
   - title: "Introduction to the course"
     date: "Week 1 [T, 9/06]"
     reading: ""
-    slides: "/static/slides/01-R/Intro_R.html"
-    class: ""
+    slides: ""
+    class: /01-R/Intro_R.html
     notes: 'Welcome! Please complete the <a href = "https://docs.google.com/forms/d/e/1FAIpQLSfLhhG-tKtUbqJyFMfW_Vc-sueswR6TzmKr0R5TJs7Z4EJVSg/viewform?usp=sf_link">class survey</a>.'
     hasclass: True
     
