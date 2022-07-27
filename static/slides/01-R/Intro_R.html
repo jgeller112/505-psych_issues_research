@@ -4,7 +4,7 @@
     <title>Research Issues and Practices in Psychology</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jason Geller, Ph.D" />
-    <meta name="date" content="2022-07-14" />
+    <meta name="date" content="2022-07-27" />
     <script src="Intro_R_files/header-attrs/header-attrs.js"></script>
     <link href="Intro_R_files/tabwid/tabwid.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
@@ -16,7 +16,7 @@ class: center, middle, inverse, title-slide
 # Research Issues and Practices in Psychology
 ## Week 1: Gentle R Introduction
 ### Jason Geller, Ph.D
-### 2022-07-14
+### 2022-07-27
 
 ---
 
@@ -28,6 +28,7 @@ class: center, middle, inverse, title-slide
 # Objective
 
 .left-column[
+
 - Get you started with R
 
 -  Load your first dataset in R
@@ -75,7 +76,6 @@ Why R?
 + Free and open-source
 
 --
-
 + Flexibility
 
 --
@@ -89,8 +89,8 @@ Why R?
 
 --
 + Easy to integrate with other tool
+--
 
--- 
 + Inclusive Community
 
 
@@ -220,6 +220,7 @@ gender
 
 ---
 # Indexing
+
 - Vectors can be indexed 
 
 
@@ -268,13 +269,18 @@ x
 - Logical vectors
 
 
+```r
+x==7
+```
+
+```
+## [1]  TRUE FALSE
+```
 
 ---
-# Ch
 # R as a Calculator
 
 - Typing in a simple calculation show us the result
-
 
 
 ```r
@@ -342,10 +348,6 @@ sqrt(64)
 ```
 ## [1] 8
 ```
-
-  - Read left to right
-
-+ What do you think `abs(-7)` does?
 
 
 ```r
@@ -501,7 +503,6 @@ a %&gt;%
 ---
 # Multiple Functions
 
-
 - Pipe operator makes it easy to do multiple functions in a row
 
 
@@ -536,23 +537,15 @@ a %&gt;%
 
 # Reading in Data
 
+
 - Download the file
 
-
-```r
-# read in csv file
-fac&lt;- read.csv(file.choose())
-
-fac&lt;- read.csv("path_to_file")
-```
-
+&lt;img src="readr.png" width="100%" /&gt;
 - General form: dataframe.name &lt;-read.csv('filename')
-
-
 ---
-# Data Frames and Tibbles
+# Data Frames
 
-&gt; A data frame is a spreadsheet. It is two-dimensional with rows and columns. 
+&gt; A data frame is like an Excel spreadsheet. It is two-dimensional with rows and columns. 
 
   - Instead of creating a number of vectors we store all the vectors into a single DF
   
@@ -564,18 +557,14 @@ fac&lt;- read.csv("path_to_file")
 car_model &lt;- c("Ford Fusion", "Hyundai Accent", "Toyota Corolla")
 car_price &lt;- c(25000, 16000, 18000)
 car_mileage &lt;- c(27, 36, 32)
-```
 
-
-
-```r
 cars_df &lt;- data.frame(model=car_model, price=car_price, mileage=car_mileage)
 
 flextable::flextable(cars_df)%&gt;% flextable::autofit()
 ```
 
 
-&lt;template id="ae3d8d7c-374b-4f4c-a3c0-6570b1ef7375"&gt;&lt;style&gt;
+&lt;template id="ac39255c-cce5-4caa-8aa9-db6f60ac8564"&gt;&lt;style&gt;
 .tabwid table{
   border-spacing:0px !important;
   border-collapse:collapse;
@@ -609,11 +598,11 @@ flextable::flextable(cars_df)%&gt;% flextable::autofit()
 .tabwid table tr {
 background-color: transparent;
 }
-&lt;/style&gt;&lt;div class="tabwid"&gt;&lt;style&gt;.cl-8ef9e838{}.cl-8ef28ebc{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-8ef2a7ee{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-8ef2a7f8{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-8ef2dbf6{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc00{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc0a{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc0b{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc14{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc15{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc16{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc17{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc1e{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc1f{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc20{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-8ef2dc28{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}&lt;/style&gt;&lt;table class='cl-8ef9e838'&gt;&lt;thead&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-8ef2dc28"&gt;&lt;p class="cl-8ef2a7ee"&gt;&lt;span class="cl-8ef28ebc"&gt;model&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc1f"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;price&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc20"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;mileage&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-8ef2dc0a"&gt;&lt;p class="cl-8ef2a7ee"&gt;&lt;span class="cl-8ef28ebc"&gt;Ford Fusion&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc00"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;25,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dbf6"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;27&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-8ef2dc14"&gt;&lt;p class="cl-8ef2a7ee"&gt;&lt;span class="cl-8ef28ebc"&gt;Hyundai Accent&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc15"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;16,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc0b"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;36&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-8ef2dc16"&gt;&lt;p class="cl-8ef2a7ee"&gt;&lt;span class="cl-8ef28ebc"&gt;Toyota Corolla&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc17"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;18,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-8ef2dc1e"&gt;&lt;p class="cl-8ef2a7f8"&gt;&lt;span class="cl-8ef28ebc"&gt;32&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/template&gt;
-&lt;div class="flextable-shadow-host" id="04c62ee3-f77b-4a4d-bd48-b56fc6d7a7ed"&gt;&lt;/div&gt;
+&lt;/style&gt;&lt;div class="tabwid"&gt;&lt;style&gt;.cl-e5e7174e{}.cl-e5df462c{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-e5df5b80{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e5df5b8a{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-e5df8d62{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8d6c{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8d76{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8d77{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8d78{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8d80{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8d81{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8d82{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8da8{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8db2{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8db3{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-e5df8db4{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}&lt;/style&gt;&lt;table class='cl-e5e7174e'&gt;&lt;thead&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-e5df8db4"&gt;&lt;p class="cl-e5df5b80"&gt;&lt;span class="cl-e5df462c"&gt;model&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e5df8db2"&gt;&lt;p class="cl-e5df5b8a"&gt;&lt;span class="cl-e5df462c"&gt;price&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e5df8db3"&gt;&lt;p class="cl-e5df5b8a"&gt;&lt;span class="cl-e5df462c"&gt;mileage&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-e5df8d76"&gt;&lt;p class="cl-e5df5b80"&gt;&lt;span class="cl-e5df462c"&gt;Ford Fusion&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e5df8d6c"&gt;&lt;p class="cl-e5df5b8a"&gt;&lt;span class="cl-e5df462c"&gt;25,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e5df8d62"&gt;&lt;p class="cl-e5df5b8a"&gt;&lt;span class="cl-e5df462c"&gt;27&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-e5df8d78"&gt;&lt;p class="cl-e5df5b80"&gt;&lt;span class="cl-e5df462c"&gt;Hyundai Accent&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e5df8d80"&gt;&lt;p class="cl-e5df5b8a"&gt;&lt;span class="cl-e5df462c"&gt;16,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e5df8d77"&gt;&lt;p class="cl-e5df5b8a"&gt;&lt;span class="cl-e5df462c"&gt;36&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-e5df8d81"&gt;&lt;p class="cl-e5df5b80"&gt;&lt;span class="cl-e5df462c"&gt;Toyota Corolla&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e5df8d82"&gt;&lt;p class="cl-e5df5b8a"&gt;&lt;span class="cl-e5df462c"&gt;18,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-e5df8da8"&gt;&lt;p class="cl-e5df5b8a"&gt;&lt;span class="cl-e5df462c"&gt;32&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/template&gt;
+&lt;div class="flextable-shadow-host" id="7c72bc4a-89b7-4a1d-8316-214c0b92df9b"&gt;&lt;/div&gt;
 &lt;script&gt;
-var dest = document.getElementById("04c62ee3-f77b-4a4d-bd48-b56fc6d7a7ed");
-var template = document.getElementById("ae3d8d7c-374b-4f4c-a3c0-6570b1ef7375");
+var dest = document.getElementById("7c72bc4a-89b7-4a1d-8316-214c0b92df9b");
+var template = document.getElementById("ac39255c-cce5-4caa-8aa9-db6f60ac8564");
 var caption = template.content.querySelector("caption");
 if(caption) {
   caption.style.cssText = "display:block;text-align:center;";
@@ -625,6 +614,24 @@ var fantome = dest.attachShadow({mode: 'open'});
 var templateContent = template.content;
 fantome.appendChild(templateContent);
 &lt;/script&gt;
+
+---
+
+# Tibbles
+
+- More modern take on Data frames
+
+  - Never changes input's type
+  - Never adjusts the names of variables
+  - It evaluates arguments lazily and sequentially
+  
+- Differences 
+  - Printing
+  
+
+```r
+as.tibble()
+```
 ---
 
 # `Here` package
@@ -650,7 +657,7 @@ here::here()
 ```
 
 ```
-## [1] "/Users/jgeller1/Desktop/505-psych_issues_research"
+## [1] "/Users/jgeller1/Desktop/Psy505_issues_application"
 ```
 
 ```r
@@ -658,11 +665,9 @@ here::here()
 ```
 
 ---
-
-
 # Loading the Data
 
-- Disclaimer: `Create new project folder first, open up R second`
+&gt; Disclaimer: `Create new project folder first, open up R second`
 
 The faculty dataset contains aggregated data per faculty:
 
@@ -693,7 +698,7 @@ fac
 ```
 
 ---
-# Looking at the Data 
+# Looking at Data 
 
 
 ```r
@@ -718,7 +723,8 @@ fac%&gt;%
 ##  Max.   :33527
 ```
 
-
+---
+# Looking at Data
 
 ```r
 library(skimr)
@@ -789,11 +795,13 @@ fac%&gt;%
 
 # Looking at the Data
 
-- Whole data frame
+- Whole dataset
+- First 6 observations
+- Last 6 observations
 
 
 ```r
-fac
+fac # whole dataset
 ```
 
 ```
@@ -803,9 +811,6 @@ fac
 ## 3 Political Science      264    63  66425 24965
 ## 4         Sociology      162    77  54246 29640
 ```
-
-- fist 6 rows
-
 
 ```r
 head(fac)
@@ -818,10 +823,6 @@ head(fac)
 ## 3 Political Science      264    63  66425 24965
 ## 4         Sociology      162    77  54246 29640
 ```
-
-- last 6 rows
-
-
 
 ```r
 tail(fac)
@@ -1033,6 +1034,33 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   }
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
+<style>
+.logo {
+  background-image: url(avatar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  width: 110px;
+  height: 128px;
+  z-index: 0;
+}
+</style>
+
+<script>
+document
+  .querySelectorAll(
+    '.remark-slide-content' +
+    ':not(.title-slide)' +
+    // add additional classes to exclude here, e.g.
+    // ':not(.inverse)' +
+    ':not(.hide-logo)'
+  )
+  .forEach(el => {
+    el.innerHTML += '<div class="logo"></div>';
+  });
+</script>
 
 <script>
 slideshow._releaseMath = function(el) {

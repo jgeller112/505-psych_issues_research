@@ -6,6 +6,8 @@ author:
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
+    includes:
+      after_body: insert-logo.html
     css: xaringan-themer.css
     nature:
       slideNumberFormat: "%current%"
@@ -77,6 +79,7 @@ style_solarized_dark(
 # Objective
 
 .left-column[
+
 - Get you started with R
 
 -  Load your first dataset in R
@@ -130,7 +133,6 @@ Why R?
 + Free and open-source
 
 --
-
 + Flexibility
 
 --
@@ -144,8 +146,8 @@ Why R?
 
 --
 + Easy to integrate with other tool
+--
 
--- 
 + Inclusive Community
 
 
