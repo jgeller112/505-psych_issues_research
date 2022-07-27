@@ -2,7 +2,7 @@
 title: "Research Issues and Practices in Psychology"
 subtitle: "Week 1: Gentle R Introduction"
 author: 
-  - "Jason Geller, Ph.D"
+  - "Jason Geller, Ph.D."
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
@@ -46,9 +46,11 @@ library(xaringanthemer)
 style_solarized_dark(
   header_font_google = google_font("Aleo"),
   header_h1_font_size = "36px",
+  header_color = "black",
   text_font_google = google_font("Aleo"),
   text_font_size = "28px",
-  text_color = "white", 
+  text_color = "black", 
+  background_color = "orange", 
   code_font_google = google_font("Share Tech Mono"),
   extra_css = list(
     ".remark-slide-content h2" = list(
