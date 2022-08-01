@@ -1,6 +1,6 @@
 ---
 title: "Research Issues and Practices in Psychology"
-subtitle: "Week 1: Gentle R Introduction"
+subtitle: "Week 1: Gentle R/Posit Introduction"
 author: 
   - "Jason Geller, Ph.D."
 date: '`r Sys.Date()`'
