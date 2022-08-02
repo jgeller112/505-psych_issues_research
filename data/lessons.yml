@@ -11,7 +11,7 @@ lessons:
     notes: 'Welcome!'
     hasclass: True
     hasassignment: True
-    assignment: "01-HW"
+    assignment: "/assignment/01-HW"
     
     
   - title: "Install R and RStudio"
