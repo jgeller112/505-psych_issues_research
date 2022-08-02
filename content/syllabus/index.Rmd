@@ -94,8 +94,6 @@ bind_rows(assignments, assignments_total) %>%
   pandoc.table(justify = "lrr", missing = "")
 ```
 
-\
-
 ```{r show-grades-table, echo=FALSE, results="asis"}
 grading %>%
   pandoc.table(justify = "lc", 
