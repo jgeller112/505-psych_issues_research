@@ -11,10 +11,9 @@ lessons:
     notes: 'Welcome!'
     hasclass: True
     hasassignment: True
-    assignment: "HW/Using_R_HW.pdf"
+    assignment: "Using_R_HW.pdf"
     
     
-  
   - title: "Install R and RStudio"
     date: [T]
     slides: ""
