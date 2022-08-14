@@ -105,4 +105,3 @@ grading %>%
   pandoc.table(justify = "lc", 
                col.names = c("Grade", "Range"))
 ```
-
