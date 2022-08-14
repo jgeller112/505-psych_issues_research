@@ -8,11 +8,6 @@
   weight = 30
   
 [[main]]
-  name = "Resources"
-  url = "/resources/"
-  weight = 90
-  
-[[main]]
   name = "People"
   url = "#people"
   weight = 40
@@ -24,5 +19,10 @@
   
 [[main]]
   name = "Schedule"
-  url = "/schedule/"
-  weight = 6
+  url = "#schedule"
+  weight = 80
+  
+[[main]]
+  name = "Resources"
+  url = "/resources/"
+  weight = 90
