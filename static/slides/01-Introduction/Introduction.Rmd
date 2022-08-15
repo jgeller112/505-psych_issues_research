@@ -1,0 +1,146 @@
+---
+title: "PSY 505: Research Issues and Applications in Psychological Science"
+subtitle: "Introduction and Course Expectations"
+author: "Jason Geller, Ph.D."
+date:  '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 18:10
+      countIncrementalSlides: true
+      background-image: url("lover.png")
+      background-size: cover
+---
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "36%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  fig.show = TRUE,
+  hiline = TRUE
+)
+
+hook_source <- knitr::knit_hooks$get('source')
+knitr::knit_hooks$set(source = function(x, options) {
+  x <- stringr::str_replace(x, "^[[:blank:]]?([^*].+?)[[:blank:]]*#<<[[:blank:]]*$", "*\\1")
+  hook_source(x, options)
+})
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+library(tidyverse)
+
+style_solarized_dark(
+  header_font_google = google_font("Aleo"),
+  header_h1_font_size = "36px",
+  header_color = "black",
+  text_font_google = google_font("Aleo"),
+  text_font_size = "28px",
+  text_color = "black", 
+  background_color = "orange", 
+  code_font_google = google_font("Share Tech Mono"),
+  extra_css = list(
+    ".remark-slide-content h2" = list(
+      "margin-top" = "2em",
+      "margin-bottom" = "2em"
+    ),
+    .big = list("font-size" = "150%"),
+    .small = list("font-size" = "75%"),
+    .subtle = list(opacity = "0.6"),
+    ".countdown-has-style h3, .countdown-has-style h3 ~ p, .countdown-has-style h3 ~ ul" = list(
+      "margin" = "0"
+    ),
+    ".countdown-has-style pre" = list(
+      "margin-top" = "-10px"
+    ),
+    "p .remark-inline-code" = list(
+      "background-color" = "orange",
+      "padding" = "2px 2px",
+      "margin" = "0 -2px"
+    ),
+    blockquote = list("margin-left" = 0),
+    "em" = list(color = "#2aa198")
+  ),
+)
+
+```
+class: center, middle
+
+# Welcome!
+
+---
+# Course Format
+
+- Extension of PSY 503
+
+-   **Discussions.** Students will participate in discussions on various research issues. We will have several articles to discuss. These will be lead by students in the class. Please come prepared with questions and thoughts. 
+
+-   **Guest Seminars.** Students will attend a series of lectures during the semester. Lectures may introduce a recent methodological contribution or discuss a controversial and easily overlooked issue regarding the application or interpretation of statistics. Lectures will be given by guest speakers who are expert in the topic.
+
+-   **Tutorials.** Students will learn skills to build reproducible and transparent research programs. These tutorials may teach students how to preregister their studies, run power analyses, and organize their code with Notebooks). Tutorials may be given by guest speakers who are expert in the topic.
+---
+# Assignments
+
+
+## Speaker Reflections (30%)
+
+We have a several guest lectures over the course of the semester. You will get points for attending these talks and submitting a reflection for each talk/presentation (500-1000 words). Reflections will be due on the Friday by 4:00 P.M after the talk.These must be submitted via Canvas. The purpose of the response is to get you thinking and engaging with the content. 
+---
+# Assignments 
+
+## Tutorial Assignments (30%)
+
+On tutorial days, there will be an assignment applying what was learned during the tutorial. These will be graded as ✅ 
+or ⛔
+---
+# Assignments
+
+## Leading Discussion (10%)
+
+Once during the semester you (possibly in a pair) will be
+responsible for leading discussions with that week’s signed reading or guest. Your job will be easier if everyone jumps in and asks questions, but if the discussion is lagging, you’ll jump in with some prepared questions for the speaker.
+
+---
+# Assignments
+## Write Your Own Tutorial (30%)
+
+For your final project you will create a tutorial about how to do something in R.The final project gives you a chance to pursue any topic in the R universe and learn more about it. For example, you could choose to write a tutorial on any R package or how to perform a statistical analysis.
+
+There is no final exam. This project is your final exam.
+---
+# Grades
+
+```{r assignments-grades, message=FALSE, warning=FALSE, echo=FALSE}
+assignments <- tribble(
+  ~Points,  ~Assignment,
+  5*6      , "Speaker Reflections",
+  30, "Tutorial Assignments",
+  10, "Leading Dicussion", 
+  30  , "Write your own tutorial",
+) %>%
+  mutate(Percent = Points / sum(Points),
+         Percent = scales::percent(Percent)) 
+
+knitr::kable(assignments)
+
+grading <- tribble(
+  ~Grade, ~Range,
+  "A",  "90–100%",
+  "B",  "80–89%",
+   "C",  "70-79%", 
+  "D",  "60-69%"
+)
+```
+
