@@ -1,5 +1,6 @@
 ---
 title: Syllabus
+date:  "`r Sys.Date()`"
 slug: syllabus
 citeproc: true
 output:
