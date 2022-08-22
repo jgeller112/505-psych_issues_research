@@ -49,7 +49,7 @@ Much of the material needed for the course will be available on Canvas. I will a
 
 ## Speaker Reflections (30%)
 
-We have a several guest lectures over the course of the semester. You will get points for attending these talks and submitting a reflection for each talk/presentation (500-1000 words). Reflections will be due on the Friday by 4:00 P.M after the talk.These must be submitted via Canvas. The purpose of the response is to get you thinking about the content. These will be graded as ✅ 
+We have several guest lectures over the course of the semester. You will get points for attending these talks and submitting a reflection for each talk (~500-1000 words). Reflections will be due on the Friday by 4:00 P.M after the talk.These must be submitted via Canvas. The purpose of the response is to get you thinking about the content. These will be graded as ✅ 
 or ⛔
  
 ## Tutorial Assignments (30%)
@@ -76,7 +76,7 @@ assignments <- tribble(
   ~Points,  ~Assignment,
   5*6      , "Speaker Reflections",
   30, "Tutorial Assignments",
-  10, "Leading Dicussion", 
+  10, "Dicussions", 
   30, "Tutorial",
 ) %>%
   mutate(Percent = Points / sum(Points),
