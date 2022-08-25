@@ -49,7 +49,7 @@ style_solarized_dark(
   text_font_google = google_font("Aleo"),
   text_font_size = "28px",
   text_color = "black", 
-  background_color = "Light Orange", 
+  background_color = "Orange", 
   code_font_google = google_font("Share Tech Mono"),
   extra_css = list(
     ".remark-slide-content h2" = list(
@@ -76,6 +76,7 @@ style_solarized_dark(
 )
 
 ```
+
 class: center, middle
 
 # Welcome!
