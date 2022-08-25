@@ -49,7 +49,7 @@ style_solarized_dark(
   text_font_google = google_font("Aleo"),
   text_font_size = "28px",
   text_color = "black", 
-  background_color = "orange", 
+  background_color = "Light Orange", 
   code_font_google = google_font("Share Tech Mono"),
   extra_css = list(
     ".remark-slide-content h2" = list(
@@ -167,6 +167,8 @@ pp
 
 - Research interests
 
+- Where are you from?
+
 - What is a boring fact about you?
 ]
 --
@@ -202,7 +204,15 @@ knitr::include_graphics("quant.jpeg")
 
 - Readings, Assignments, and Schedule: 
 
-  - __https://psy505.netlify.app/__
+  - **https://psy505.netlify.app/**
+  
+- I will use Canvas to: 
+
+  - Send announcements  
+  
+  - Accept assignments
+  
+  - Emails
   
 ---
 # Assignments
