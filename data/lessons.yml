@@ -6,8 +6,8 @@ lessons:
   - title: "Introduction to the course"
     date: "Week 1 [T, 9/06]"
     reading: ""
-    slides: "/01-Introduction/Introduction.html"
-    class: """
+    slides: ""
+    class: "/01-Introduction/Introduction"
     notes: 'Welcome!'
     hasclass: True
     hasassignment: True
