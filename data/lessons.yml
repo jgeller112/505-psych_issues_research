@@ -7,7 +7,7 @@ lessons:
     date: "Week 1 [T, 9/06]"
     reading: ""
     slides: ""
-    class: "/01-R/Intro_R"
+    class: "/01-Introduction/Introduction.html"
     notes: 'Welcome!'
     hasclass: True
     hasassignment: True
@@ -17,6 +17,7 @@ lessons:
   - title: "Install R and RStudio"
     date: [T]
     slides: ""
+    class: "/01-R/Intro_R"
     notes: "Prior to class, please install R and RStudio. A guide for how to do this is under Resources"
     reading: ""
     hasclass: True

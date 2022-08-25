@@ -91,12 +91,126 @@ class: center, middle
 
 -   **Tutorials.** Students will learn skills to build reproducible and transparent research programs. These tutorials may teach students how to preregister their studies, run power analyses, and organize their code with Notebooks). Tutorials may be given by guest speakers who are expert in the topic.
 ---
-# Assignments
+# About Me
 
+```{r, fig.align='center', echo=FALSE, warning=FALSE}
+
+knitr::include_graphics("jg.jpg")
+```
+
+
+---
+# My Journey
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="100%", out.height="60%"}
+
+library(vistime)
+library(tidyverse)
+batman_data <- data.frame(
+
+  
+   event = c("M.S. DePaul University",
+                  "Ph.D. Iowa State University",
+                  "Post-doc -  University of Alabama-Birmingham", 
+                  "Postdoc - University of Iowa",
+             "RuCCS",
+                  "Here at Princeton"),
+
+  start = as.character(c("2009-08-09","2012-08-08", "2017-01-08", "2019-04-07", "2020-07-05", "2022-01-07")), 
+  end = as.character(c("2012-05-06","2017-08-08", "2019-01-04", "2020-01-07", "2020-01-08", "2023-01-07"))
+) 
+
+
+pp <- gg_vistime(batman_data, optimize_y = FALSE)
+
+pp <- pp + theme(axis.text.x = element_text(size = 20, color = "black", angle = 30))+ 
+                   theme(text=element_text(size=12))
+
+pp
+
+```
+
+---
+# Research Interests
+
+.pull-left[
+
+- Language processing
+
+  - Mechanisms and representations
+      - Auditory and visual word recognition
+      - Semantics
+          - **Under ambiguity**
+- Learning and memory
+
+    - Metamemory
+    - Desirable difficulties
+]
+--
+
+.pull-right[
+- Meta-research (philosophy of science)
+
+  - Replication issues in psychology and neuroscience
+  ]
+---
+# Ice Breaker
+
+.pull-left[
+
+<br>
+<br>
+- Name
+
+- Lab
+
+- Research interests
+
+- What is a boring fact about you?
+]
+--
+.pull-right[
+```{r, echo=FALSE, warning=FALSE, out.width="100%", out.height="100%"}
+
+knitr::include_graphics("quant.jpeg")
+```
+]
+---
+# Instructor Contact: 
+
+- Office: PSH 325 🏢
+
+- Email: jg9120@princeton.edu
+
+- Cell: 515-520-3464 📱
+
+- Twitter: jgeller_phd
+
+---
+# Office Hours:
+
+- MW: 1:00 P.M. - 3:00 P.M. 🪑
+
+- By appointment
+
+  - Microsoft Bookings:
+  **https://outlook.office365.com/owa/calendar/Fall2022@princeton.edu/bookings/**
+
+---
+# Course Content:
+
+- Readings, Assignments, and Schedule: 
+
+  - __https://psy505.netlify.app/__
+  
+---
+# Assignments
 
 ## Speaker Reflections (30%)
 
-We have a several guest lectures over the course of the semester. You will get points for attending these talks and submitting a reflection for each talk/presentation (500-1000 words). Reflections will be due on the Friday by 4:00 P.M after the talk.These must be submitted via Canvas. The purpose of the response is to get you thinking and engaging with the content. 
+We have a several guest lectures over the course of the semester. You will get points for attending these talks and submitting a reflection for each talk/presentation (500-1000 words). Reflections will be due on the Friday by 4:00 P.M after the talk.These must be submitted via Canvas. The purpose of the response is to get you thinking and engaging with the content.
+
 ---
 # Assignments 
 
@@ -109,11 +223,12 @@ or ⛔
 
 ## Leading Discussion (10%)
 
-Once during the semester you (possibly in a pair) will be
+During the semester you (possibly in a pair) will be
 responsible for leading discussions with that week’s signed reading or guest. Your job will be easier if everyone jumps in and asks questions, but if the discussion is lagging, you’ll jump in with some prepared questions for the speaker.
 
 ---
 # Assignments
+
 ## Write Your Own Tutorial (30%)
 
 For your final project you will create a tutorial about how to do something in R.The final project gives you a chance to pursue any topic in the R universe and learn more about it. For example, you could choose to write a tutorial on any R package or how to perform a statistical analysis.
@@ -142,5 +257,32 @@ grading <- tribble(
    "C",  "70-79%", 
   "D",  "60-69%"
 )
+```
+
+---
+# Class Enviroment
+
+I would like to create a learning environment for my students that supports a diversity of thoughts, perspectives and experiences, and honors your identities (including race, gender, class, sexuality, religion, ability, SES, etc. ) To help accomplish this:
+
+ - If you have a name and/or set of pronouns that differ from those that appear in your official Rutgers records, please let me know!
+ 
+- If you feel like your performance in the class is being impacted by your experiences outside of class, please don't hesitate to come and talk with me. I want to be a resource for you. Remember that you can also submit anonymous feedback (which will lead to me making a general announcement to the class, if necessary to address your concerns). 
+
+- I (like many people) am still in the process of learning about diverse perspectives and identities. If something was said in class (by anyone) that made you feel uncomfortable, please talk to me about it. (Again, anonymous feedback is always an option).
+---
+#Masks
+
+Your choice. 
+
+```{r, fig.align='center', echo=FALSE, warning=FALSE, out.width="80%"}
+
+knitr::include_graphics("slipknot.webp")
+
+```
+---
+# Schedule
+```{r out.height="100%", out.width="100%", echo=FALSE}
+knitr::include_url("https://psy505.netlify.app/#schedule")
+
 ```
 
