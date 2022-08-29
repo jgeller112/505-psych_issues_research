@@ -79,15 +79,7 @@ style_solarized_dark(
 
 class: center, middle
 
-# Welcome!
-
----
-
-```{r, fig.align='center', out.width="50%", out.height="50%",  echo=FALSE, warning=FALSE}
-
-knitr::include_graphics("loki.JPG")
-# Course Format
-```
+# Welcome to PSY 505! 
 
 ---
 # About Me
@@ -177,13 +169,16 @@ knitr::include_graphics("quant.jpeg")
 ```
 ]
 ---
+
+---
 background-image: url(syllabus.jpg)
 background-position: center
 background-size: cover
 
 ---
 # PSY 505
-- Extension of PSY 503
+
+> Provide exposure to methods, practices, and conduct across the full range of areas and topics within psychological science. 
 
 -   **Discussions.** Students will participate in discussions on various research issues. We will have several articles to discuss. These will be lead by students in the class. Please come prepared with questions and thoughts. 
 
@@ -204,7 +199,7 @@ background-size: cover
 ---
 # Office Hours:
 
-- MW: 1:00 P.M. - 3:00 P.M. 🪑
+- M 1:00 P.M.- 3:00 P.M.; W 1:00 P.M. - 2:00 P.M. 🪑
 
 - By appointment
 
@@ -284,6 +279,8 @@ background-size: cover
 
 On tutorial days, there will be an assignment applying what was learned during the tutorial. These will be graded as ✅ 
 or ⛔
+
+ - Assignments will be due the next class period. 
 ---
 # Assignments
 
