@@ -4,19 +4,28 @@
     <title>Research Issues and Practices in Psychology</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jason Geller, Ph.D." />
-    <meta name="date" content="2022-08-01" />
+    <meta name="date" content="2022-08-29" />
     <script src="Intro_R_files/header-attrs/header-attrs.js"></script>
     <link href="Intro_R_files/tabwid/tabwid.css" rel="stylesheet" />
+    <link href="Intro_R_files/tabwid/scrool.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # Research Issues and Practices in Psychology
-## Week 1: Gentle R/Posit Introduction
+]
+.subtitle[
+## Week 1: Gentle Introduction to R
+]
+.author[
 ### Jason Geller, Ph.D.
-### 2022-08-01
+]
+.date[
+### 2022-08-29
+]
 
 ---
 
@@ -109,7 +118,7 @@ background-size: cover
 
 # Outline
 
-+ Why R
++ Why R?
 
 + IDE
 
@@ -128,7 +137,6 @@ background-size: cover
 # Assignment of Variables
 
 - A variable is a symbol that stands for another value (just like “X” in algebra)
-
 
 
 ```r
@@ -160,6 +168,8 @@ x + 7
 ---
 
 # Vectors
+
+- Think of it as a row or column in a spreadsheet 
 
 - Allows multiple types of classes to be concatenated together
 
@@ -334,7 +344,7 @@ x==7
 
 - Take an object, do something to it, and return the result
 
-- More complex calculations can be done  with functions:
+- More complex calculations can be done with functions:
 
   - What is square root of 64?
 
@@ -402,15 +412,14 @@ background-size: cover
 
 2. In one of these scripts type "Hello World" 
 
-3. To paste strings together you can use the `paste`() function (e.g., paste("Hello", "World")).
+3. To paste strings together you can use the `paste`() function (e.g., paste("Hello", "World")). Use ?paste or google "paste function in R" to get an idea of how to use this function. 
 
 3.1 Use the `paste` function to string together a sentence of your choice. Assign it to a variable or object. 
 
-5. Modify the function above and instead of returning the sum return the .  
+5. Modify the function above and instead of returning the sum return the product. 
 
-
+---
 # Outline
-
 
 + Why R
 
@@ -479,7 +488,7 @@ a %&gt;%
 
   - Start with a and then round
   
-- Become popular is the `|&gt;` pipe
+-  `|&gt;` pipe is slowly becoming more popular
 
 ---
 
@@ -504,7 +513,6 @@ a %&gt;%
 # Multiple Functions
 
 - Pipe operator makes it easy to do multiple functions in a row
-
 
 
 ```r
@@ -564,7 +572,7 @@ flextable::flextable(cars_df)%&gt;% flextable::autofit()
 ```
 
 
-&lt;template id="ab41d673-322a-43df-a0be-33bc8d10d90f"&gt;&lt;style&gt;
+&lt;template id="58cc524c-915a-4545-870b-a46eed70befc"&gt;&lt;style&gt;
 .tabwid table{
   border-spacing:0px !important;
   border-collapse:collapse;
@@ -598,11 +606,14 @@ flextable::flextable(cars_df)%&gt;% flextable::autofit()
 .tabwid table tr {
 background-color: transparent;
 }
-&lt;/style&gt;&lt;div class="tabwid"&gt;&lt;style&gt;.cl-6a38c182{}.cl-6a32f180{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-6a3305f8{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-6a330602{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-6a333a00{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a0a{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a0b{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a14{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a15{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a1e{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a1f{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a28{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a29{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a2a{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a32{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-6a333a33{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}&lt;/style&gt;&lt;table class='cl-6a38c182'&gt;&lt;thead&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-6a333a33"&gt;&lt;p class="cl-6a3305f8"&gt;&lt;span class="cl-6a32f180"&gt;model&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-6a333a2a"&gt;&lt;p class="cl-6a330602"&gt;&lt;span class="cl-6a32f180"&gt;price&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-6a333a32"&gt;&lt;p class="cl-6a330602"&gt;&lt;span class="cl-6a32f180"&gt;mileage&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-6a333a0b"&gt;&lt;p class="cl-6a3305f8"&gt;&lt;span class="cl-6a32f180"&gt;Ford Fusion&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-6a333a0a"&gt;&lt;p class="cl-6a330602"&gt;&lt;span class="cl-6a32f180"&gt;25,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-6a333a00"&gt;&lt;p class="cl-6a330602"&gt;&lt;span class="cl-6a32f180"&gt;27&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-6a333a15"&gt;&lt;p class="cl-6a3305f8"&gt;&lt;span class="cl-6a32f180"&gt;Hyundai Accent&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-6a333a1e"&gt;&lt;p class="cl-6a330602"&gt;&lt;span class="cl-6a32f180"&gt;16,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-6a333a14"&gt;&lt;p class="cl-6a330602"&gt;&lt;span class="cl-6a32f180"&gt;36&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-6a333a1f"&gt;&lt;p class="cl-6a3305f8"&gt;&lt;span class="cl-6a32f180"&gt;Toyota Corolla&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-6a333a28"&gt;&lt;p class="cl-6a330602"&gt;&lt;span class="cl-6a32f180"&gt;18,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-6a333a29"&gt;&lt;p class="cl-6a330602"&gt;&lt;span class="cl-6a32f180"&gt;32&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/template&gt;
-&lt;div class="flextable-shadow-host" id="8615069b-a832-45ed-97c9-747f3745c4b7"&gt;&lt;/div&gt;
+.katex-display {
+    margin: 0 0 !important;
+}
+&lt;/style&gt;&lt;div class="tabwid"&gt;&lt;style&gt;.cl-a5ba3a70{}.cl-a5b634a2{font-family:'Helvetica';font-size:11pt;font-weight:normal;font-style:normal;text-decoration:none;color:rgba(0, 0, 0, 1.00);background-color:transparent;}.cl-a5b643a2{margin:0;text-align:left;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-a5b643ac{margin:0;text-align:right;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);padding-bottom:5pt;padding-top:5pt;padding-left:5pt;padding-right:5pt;line-height: 1;background-color:transparent;}.cl-a5b66a4e{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a4f{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a58{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a59{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a62{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a63{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 0 solid rgba(0, 0, 0, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a64{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a6c{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a6d{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 0 solid rgba(0, 0, 0, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a6e{width:54.2pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a76{width:59.1pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}.cl-a5b66a77{width:97.6pt;background-color:transparent;vertical-align: middle;border-bottom: 2pt solid rgba(102, 102, 102, 1.00);border-top: 2pt solid rgba(102, 102, 102, 1.00);border-left: 0 solid rgba(0, 0, 0, 1.00);border-right: 0 solid rgba(0, 0, 0, 1.00);margin-bottom:0;margin-top:0;margin-left:0;margin-right:0;}&lt;/style&gt;&lt;table class='cl-a5ba3a70'&gt;&lt;thead&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-a5b66a77"&gt;&lt;p class="cl-a5b643a2"&gt;&lt;span class="cl-a5b634a2"&gt;model&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-a5b66a6e"&gt;&lt;p class="cl-a5b643ac"&gt;&lt;span class="cl-a5b634a2"&gt;price&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-a5b66a76"&gt;&lt;p class="cl-a5b643ac"&gt;&lt;span class="cl-a5b634a2"&gt;mileage&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-a5b66a58"&gt;&lt;p class="cl-a5b643a2"&gt;&lt;span class="cl-a5b634a2"&gt;Ford Fusion&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-a5b66a4f"&gt;&lt;p class="cl-a5b643ac"&gt;&lt;span class="cl-a5b634a2"&gt;25,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-a5b66a4e"&gt;&lt;p class="cl-a5b643ac"&gt;&lt;span class="cl-a5b634a2"&gt;27&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-a5b66a62"&gt;&lt;p class="cl-a5b643a2"&gt;&lt;span class="cl-a5b634a2"&gt;Hyundai Accent&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-a5b66a63"&gt;&lt;p class="cl-a5b643ac"&gt;&lt;span class="cl-a5b634a2"&gt;16,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-a5b66a59"&gt;&lt;p class="cl-a5b643ac"&gt;&lt;span class="cl-a5b634a2"&gt;36&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style="overflow-wrap:break-word;"&gt;&lt;td class="cl-a5b66a64"&gt;&lt;p class="cl-a5b643a2"&gt;&lt;span class="cl-a5b634a2"&gt;Toyota Corolla&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-a5b66a6c"&gt;&lt;p class="cl-a5b643ac"&gt;&lt;span class="cl-a5b634a2"&gt;18,000&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;td class="cl-a5b66a6d"&gt;&lt;p class="cl-a5b643ac"&gt;&lt;span class="cl-a5b634a2"&gt;32&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;&lt;/template&gt;
+&lt;div class="flextable-shadow-host" id="770c9eda-9e7d-48f8-b1fb-cdc0f13cb195"&gt;&lt;/div&gt;
 &lt;script&gt;
-var dest = document.getElementById("8615069b-a832-45ed-97c9-747f3745c4b7");
-var template = document.getElementById("ab41d673-322a-43df-a0be-33bc8d10d90f");
+var dest = document.getElementById("770c9eda-9e7d-48f8-b1fb-cdc0f13cb195");
+var template = document.getElementById("58cc524c-915a-4545-870b-a46eed70befc");
 var caption = template.content.querySelector("caption");
 if(caption) {
   caption.style.cssText = "display:block;text-align:center;";
@@ -634,7 +645,32 @@ as.tibble()
 ```
 ---
 
-# `Here` package
+# Marix
+
+- Let's talk about the `[ , ]` 
+- `[row, column]` to *subset* or grab specific values
+
+
+```r
+myMatrix &lt;- matrix(data = 1:10,
+                   nrow = 5,
+                   ncol = 2)
+myMatrix
+```
+
+```
+##      [,1] [,2]
+## [1,]    1    6
+## [2,]    2    7
+## [3,]    3    8
+## [4,]    4    9
+## [5,]    5   10
+```
+
+---
+# Working Directories
+
+## `Here` package
 
 - `Here` helps set relative as opposed to absolute paths
 
@@ -657,7 +693,7 @@ here::here()
 ```
 
 ```
-## [1] "/Users/jgeller1/Desktop/Psy505_issues_application"
+## [1] "/Users/jasongeller/Documents/505-psych_issues_research/505-psych_issues_research"
 ```
 
 ```r
@@ -888,8 +924,6 @@ library(haven)
 fac&lt;-  read_spss('/Users/jg/Desktop/experiment.spss')
 ```
 ---
-
----
 # Outline
 
 + Why R
@@ -915,12 +949,24 @@ write.csv(fac, file="df.csv")
 write.table(fac, file="df.txt")
 ```
 ---
+# Wrapping Up
+-  You've learned:
+  - Some basic programming terminology 
+  - Specific *R* defaults and issues
+  - Example functions and use cases
+- How do I get started? 
+  - Practice!
+  
+---
+# Helpful Websites
 
-# Getting help
-
-1. R help files
-2. Cheat sheets  (https://rstudio.cloud/learn/cheat-sheets)
-3. Google!
+- Google! 
+- Cheat sheets  (https://rstudio.cloud/learn/cheat-sheets)
+- Quick-R: www.statmethods.net
+- R documentation: www.rdocumentation.org
+- Swirl: www.swirlstats.com 
+- Stack Overflow: www.stackoverflow.com 
+- Learn Statistics with R: https://learningstatisticswithr.com/
 
 ---
 
@@ -937,6 +983,11 @@ write.table(fac, file="df.txt")
 5. Using here assign the file to a name of your choice
 
 7. Explore the data set by running the commands head(data), str(data), glimpse(data) and summary(data) in your R script. You will use these a lot in the future, so have a closer look at the different outputs in the console (lower left). Remember to save your script!
+
+---
+class:middle center
+
+# Tutorial assignment due next Tuesday
 
 
 
@@ -991,6 +1042,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
@@ -1034,33 +1098,6 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   }
   preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
 })(document);</script>
-<style>
-.logo {
-  background-image: url(avatar.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: 1em;
-  right: 1em;
-  width: 110px;
-  height: 128px;
-  z-index: 0;
-}
-</style>
-
-<script>
-document
-  .querySelectorAll(
-    '.remark-slide-content' +
-    ':not(.title-slide)' +
-    // add additional classes to exclude here, e.g.
-    // ':not(.inverse)' +
-    ':not(.hide-logo)'
-  )
-  .forEach(el => {
-    el.innerHTML += '<div class="logo"></div>';
-  });
-</script>
 
 <script>
 slideshow._releaseMath = function(el) {

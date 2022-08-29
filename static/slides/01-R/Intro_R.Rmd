@@ -1,13 +1,13 @@
 ---
 title: "Research Issues and Practices in Psychology"
-subtitle: "Week 1: Gentle R/Posit Introduction"
+subtitle: "Week 1: Gentle Introduction to R"
 author: 
   - "Jason Geller, Ph.D."
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
     includes:
-      after_body: insert-logo.html
+      after_body:
     css: xaringan-themer.css
     nature:
       slideNumberFormat: "%current%"
@@ -44,10 +44,10 @@ knitr::knit_hooks$set(source = function(x, options) {
 library(xaringanthemer)
 
 style_solarized_dark(
-  header_font_google = google_font("Aleo"),
+  header_font_google = google_font("Open Sans"),
   header_h1_font_size = "36px",
   header_color = "black",
-  text_font_google = google_font("Aleo"),
+  text_font_google = google_font("Open Sans"),
   text_font_size = "28px",
   text_color = "black", 
   background_color = "orange", 
@@ -168,7 +168,7 @@ background-size: cover
 
 # Outline
 
-+ Why R
++ Why R?
 
 + IDE
 
@@ -188,8 +188,8 @@ background-size: cover
 
 - A variable is a symbol that stands for another value (just like “X” in algebra)
 
-
 ```{r}
+
 x <- 4
 
 x
@@ -212,6 +212,8 @@ x + 7
 ---
 
 # Vectors
+
+- Think of it as a row or column in a spreadsheet 
 
 - Allows multiple types of classes to be concatenated together
 
@@ -325,7 +327,7 @@ x==7
 
 - Take an object, do something to it, and return the result
 
-- More complex calculations can be done  with functions:
+- More complex calculations can be done with functions:
 
   - What is square root of 64?
 
@@ -391,15 +393,14 @@ background-size: cover
 
 2. In one of these scripts type "Hello World" 
 
-3. To paste strings together you can use the `paste`() function (e.g., paste("Hello", "World")).
+3. To paste strings together you can use the `paste`() function (e.g., paste("Hello", "World")). Use ?paste or google "paste function in R" to get an idea of how to use this function. 
 
 3.1 Use the `paste` function to string together a sentence of your choice. Assign it to a variable or object. 
 
-5. Modify the function above and instead of returning the sum return the .  
+5. Modify the function above and instead of returning the sum return the product. 
 
-
+---
 # Outline
-
 
 + Why R
 
@@ -475,7 +476,7 @@ a %>%
 
   - Start with a and then round
   
-- Become popular is the `|>` pipe
+-  `|>` pipe is slowly becoming more popular
 
 ---
 
@@ -500,7 +501,6 @@ a %>%
 # Multiple Functions
 
 - Pipe operator makes it easy to do multiple functions in a row
-
 
 ```{r, eval=FALSE}
 
@@ -585,7 +585,22 @@ as.tibble()
 ```
 ---
 
-# `Here` package
+# Marix
+
+- Let's talk about the `[ , ]` 
+- `[row, column]` to *subset* or grab specific values
+
+```{r}
+myMatrix <- matrix(data = 1:10,
+                   nrow = 5,
+                   ncol = 2)
+myMatrix
+```
+
+---
+# Working Directories
+
+## `Here` package
 
 - `Here` helps set relative as opposed to absolute paths
 
@@ -733,8 +748,6 @@ fac<-  read_spss('/Users/jg/Desktop/experiment.spss')
 
 ```
 ---
-
----
 # Outline
 
 + Why R
@@ -762,12 +775,24 @@ write.table(fac, file="df.txt")
 
 ```
 ---
+# Wrapping Up
+-  You've learned:
+  - Some basic programming terminology 
+  - Specific *R* defaults and issues
+  - Example functions and use cases
+- How do I get started? 
+  - Practice!
+  
+---
+# Helpful Websites
 
-# Getting help
-
-1. R help files
-2. Cheat sheets  (https://rstudio.cloud/learn/cheat-sheets)
-3. Google!
+- Google! 
+- Cheat sheets  (https://rstudio.cloud/learn/cheat-sheets)
+- Quick-R: www.statmethods.net
+- R documentation: www.rdocumentation.org
+- Swirl: www.swirlstats.com 
+- Stack Overflow: www.stackoverflow.com 
+- Learn Statistics with R: https://learningstatisticswithr.com/
 
 ---
 
@@ -784,6 +809,11 @@ write.table(fac, file="df.txt")
 5. Using here assign the file to a name of your choice
 
 7. Explore the data set by running the commands head(data), str(data), glimpse(data) and summary(data) in your R script. You will use these a lot in the future, so have a closer look at the different outputs in the console (lower left). Remember to save your script!
+
+---
+class:middle center
+
+# Tutorial assignment due next Tuesday
 
 
 
