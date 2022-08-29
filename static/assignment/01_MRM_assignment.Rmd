@@ -5,7 +5,7 @@ title: "01-HW-Intro-R"
 
 # Intro to R Homework
 
-[Homework](/static/HW/Using_R_HW.pdf)
+[Homework](/505-psych_issues_research/static/HW/Using_R_HW.pdf)
 
 
 
