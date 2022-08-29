@@ -1,11 +1,11 @@
 ---
-title: "01-HW"
+title: "01-HW-Intro-R"
 
 ---
 
 # Intro to R Homework
 
-[HW1](/assignment/Using_R_HW.pdf)
+[HW1](/static/HW/Using_R_HW.pdf)
 
 
 
