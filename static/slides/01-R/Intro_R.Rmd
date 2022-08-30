@@ -160,6 +160,13 @@ Open to everyone. Anyone can contribute. I have a package called gazeR. There is
 
 ---
 
+<center>
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Yes, I made the corn song about R. Let me know how the students react tomorrow <a href="https://twitter.com/minebocek?ref_src=twsrc%5Etfw">@minebocek</a>! And thanks <a href="https://twitter.com/LisaDeBruine?ref_src=twsrc%5Etfw">@LisaDeBruine</a> for the lyrics :) <a href="https://t.co/8HKHpPoiQ2">pic.twitter.com/8HKHpPoiQ2</a></p>&mdash; Rafael Moral (@rafamoral) <a href="https://twitter.com/rafamoral/status/1564376662971760642?ref_src=twsrc%5Etfw">August 29, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<center> 
+
+
+---
 background-image: url(console_layout.png)
 background-position: center
 background-size: cover
@@ -259,6 +266,14 @@ gender
 
 ```
 
+- Logical vectors
+
+```{r}
+
+x==7
+
+```
+
 ---
 # Indexing
 
@@ -285,17 +300,6 @@ x[1] <- 7
 x
 ```
 
----
-
-# Vectors
-
-- Logical vectors
-
-```{r}
-
-x==7
-
-```
 
 ---
 # R as a Calculator
@@ -393,7 +397,7 @@ background-size: cover
 
 2. In one of these scripts type "Hello World" 
 
-3. To paste strings together you can use the `paste`() function (e.g., paste("Hello", "World")). Use ?paste or google "paste function in R" to get an idea of how to use this function. 
+3. To paste strings together you can use the `paste`() function (e.g., paste("Hello", "World")). Use ?paste or Google "paste function in R" to get an idea of how to use this function. 
 
 3.1 Use the `paste` function to string together a sentence of your choice. Assign it to a variable or object. 
 
@@ -585,7 +589,7 @@ as.tibble()
 ```
 ---
 
-# Marix
+# Matrix
 
 - Let's talk about the `[ , ]` 
 - `[row, column]` to *subset* or grab specific values
