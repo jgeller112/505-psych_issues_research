@@ -105,7 +105,7 @@ knitr::include_graphics("lover.png")
 
 ---
 
-# I know it is scary
+# It's Scary
 
 ```{r, fig.align='center', echo=FALSE, warning=FALSE,  out.width = "65%"}
 
@@ -144,10 +144,10 @@ Why R?
 + Excellent graphics (via `ggplot2`)
 
 --
-+ Easy to generate with reproducible reports
++ Easy to generate reproducible reports (markdown and quarto)
 
 --
-+ Easy to integrate with other tool
++ Easy to integrate with other tools and programs
 --
 
 + Inclusive Community
