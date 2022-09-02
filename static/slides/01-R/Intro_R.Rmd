@@ -2,7 +2,7 @@
 title: "Research Issues and Practices in Psychology"
 subtitle: "Week 1: Gentle Introduction to R"
 author: 
-  - "Jason Geller, Ph.D."
+  - "Jason Geller, Ph.D.(he/him/his)"
 date: '`r Sys.Date()`'
 output:
   xaringan::moon_reader:

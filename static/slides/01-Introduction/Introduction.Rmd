@@ -1,7 +1,7 @@
 ---
 title: "PSY 505: Research Issues and Applications in Psychological Science"
 subtitle: "Introduction and Course Expectations"
-author: "Jason Geller, Ph.D."
+author: "Jason Geller, Ph.D.(he/him/his)"
 date:  '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
@@ -219,6 +219,7 @@ background-size: cover
 - Readings, Assignments, and Schedule: 
 
   - **https://psy505.netlify.app/**
+  
   - https://osf.io/qh9rb/
   
 - I will use Canvas to: 
