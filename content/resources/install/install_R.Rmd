@@ -1,6 +1,6 @@
 ---
 title: "Install R"
-date: 
+date: '`r Sys.Date()`'
 summary: 'Walkthrough of how to install R'
 featured: true
 draft: false
