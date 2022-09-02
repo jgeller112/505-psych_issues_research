@@ -151,6 +151,7 @@ pp
 
 <br>
 <br>
+
 - Name
 
 - Lab
@@ -161,6 +162,8 @@ pp
 
 - What is a boring fact about you?
 ]
+
+- One fun thing you did during the summer
 --
 .pull-right[
 ```{r, echo=FALSE, warning=FALSE, out.width="100%", out.height="100%"}
@@ -216,6 +219,7 @@ background-size: cover
 - Readings, Assignments, and Schedule: 
 
   - **https://psy505.netlify.app/**
+  - https://osf.io/qh9rb/
   
 - I will use Canvas to: 
 
@@ -223,7 +227,7 @@ background-size: cover
   
   - Retrieve assignments
   
-  - Answer and send Emails
+  - Answer and send emails
   
 ---
 # Assignments
