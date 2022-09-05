@@ -345,7 +345,7 @@ gender
 
 ```
 
-- Logical vectors
+- Logical 
 
 ```{r}
 
@@ -722,6 +722,23 @@ here::here()
 <br>
 
  # **Always create an R project before you start**
+
+---
+# Aside: Naming Conventions
+
+- Object names are case-sensitive!!
+
+- Typing in data to call an object named Data will fail
+
+- Object names can contain letters, numbers, underscores “_” and periods “.”
+
+- In most cases you should use snake_case to name objects
+
+- Avoid periods
+
+- use_an_underscore_between_words
+
+- Names should be short and descriptive, with descriptive being the most important feature
 
 ---
 # Loading the Data
