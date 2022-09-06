@@ -3,7 +3,7 @@ lessons:
   - title: '<span class="fake-header-table">Research Issues and Practices</span>'
     header: True
 
-  - title: "Introduction to the course"
+  - title: "Introduction and Course Expectations"
     date: "Week 1 [T, 9/06]"
     reading: ""
     slides: ""
@@ -32,7 +32,7 @@ lessons:
   - title: "Seminar: Robert Calin-Jageman, Ph.D. (Dominican University)"
     date: "Week 3 [T, 9/20]"
     slides: ""
-    notes: 'Prior to the talk Bob will lead a short workshop on ESCI in R and JAMOVI'
+    notes: '**Jamie Chiu** Leading Dicussion. Prior to the talk Bob will lead a short workshop on ESCI in R and JAMOVI'
     reading: ""
     hasclass: True
     
@@ -46,14 +46,14 @@ lessons:
   - title: "Seminar: Daniël Lakens, Ph.D. (Eindhoven University of Technology)"
     date: "Week 5 [T, 10/04]"
     slides: ""
-    notes: ""
+    notes: "**Claire Whiting** leading dicussion"
     reading: ""
     hasclass: True
     
   - title: "Seminar: Ulrich Schimmack, Ph.D. (University of Toronto Mississauga)"
     date: "Week 6 [T, 10/11]"
     slides: ""
-    notes: ""
+    notes: "**Henna Vartiainen** leading discussion"
     reading: ""
     hasclass: True
     
@@ -67,7 +67,7 @@ lessons:
   - title: "Discussion: Open Science and Replication/Reproducibility"
     date: "Week 8 [T, 10/25]"
     slides: ""
-    notes: "How to preregister a study/experiment"
+    notes: "**Sydney Garcia** leading dicussion. How to preregister a study/experiment"
     reading: ""
     hasclass: True
     hasassignment: True
@@ -75,7 +75,7 @@ lessons:
   - title: "Seminar: Bob McMurrary (The University of Iowa)"
     date: "Week 9 [T, 11/01]"
     slides: ""
-    notes: ""
+    notes: "**Nicole Horner** leading dicussion"
     reading: ""
     hasclass: True
     hasassignment: True
@@ -83,7 +83,7 @@ lessons:
   - title: "Seminar: Erin Buchanan, Ph.D. (Harrisburg University of Science and Technology)"
     date: "Week 10 [T, 11/08]"
     slides: ""
-    notes: ""
+    notes: "**Sarah Joo** leading dicussion"
     reading: ""
     hasclass: True
     hasassignment: True
@@ -91,7 +91,7 @@ lessons:
   - title: "Antoine Coutrot, Ph.D.(French National Centre for Scientific Research)"
     date: "Week 11 [T, 11/15]"
     slides: ""
-    notes: ""
+    notes: "**Cody Dong** leading discussion"
     reading: ""
     hasclass: True
     hasassignment: True
