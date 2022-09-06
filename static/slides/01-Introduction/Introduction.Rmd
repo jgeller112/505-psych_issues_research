@@ -175,13 +175,20 @@ knitr::include_graphics("quant.jpeg")
 ]
 ---
 
+```{r, echo=FALSE, warning=FALSE, out.width="100%", out.height="100%"}
+
+knitr::include_graphics("met.png")
+```
+]
+
+
 ---
 background-image: url(syllabus.jpg)
 background-position: center
 background-size: cover
 
 ---
-# PSY 505
+# PSY 505: Precept
 
 > Provide exposure to methods, practices, and conduct across the full range of areas and topics within psychological science. 
 
