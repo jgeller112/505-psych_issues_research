@@ -1,0 +1,48 @@
+---
+title: "PSYCH 503 Problem Set 1"
+author: "Your Name Here"
+summary: 'RMD template for homework'
+date: "2022-09-08"
+output:
+  pdf_document: default
+  html_document:
+    highlight: tango
+urlcolor: blue
+---
+
+
+
+<div id="notes-on-the-yaml-header" class="section level2">
+<h2>Notes on the YAML header</h2>
+<ul>
+<li>Be sure to change the title and author fields</li>
+<li>The date is automatically set to the current day when knitting</li>
+</ul>
+</div>
+<div id="problem-1" class="section level1">
+<h1>Problem 1</h1>
+<p>Here is a <a href="https://adv-r.hadley.nz/">link</a>. Your homework goes here.</p>
+<p>Yet more text, and another code section:</p>
+</div>
+<div id="code" class="section level1">
+<h1>Code</h1>
+<pre class="r numberLines"><code>knitr::opts_chunk$set(
+  echo = FALSE,                 # don&#39;t show code
+  warning = FALSE,              # don&#39;t show warnings
+  message = FALSE,              # don&#39;t show messages (less serious warnings)
+  cache = FALSE,                # set to TRUE to save results from last compilation
+  fig.align = &quot;center&quot;,         # center figures
+  attr.source = &#39;.numberLines&#39;  # add line numbers to code
+)
+library(tidyverse)       # load libraries you always use here
+set.seed(27)             # make random results reproducible
+fit &lt;- lm(hp ~ ., mtcars)
+au &lt;- broom::augment(fit)
+au %&gt;% 
+  gather(x, val, -contains(&quot;.&quot;)) %&gt;% 
+  ggplot(aes(val, .resid)) + 
+  geom_point() + 
+  facet_wrap(~x, scales = &quot;free&quot;)
+knitr::kable(head(select(au, 1:5)))
+# this R markdown chunk generates a code appendix</code></pre>
+</div>

@@ -1,0 +1,55 @@
+---
+title: "PSYCH 503 Problem Set 1"
+author: "Your Name Here"
+summary: 'RMD template for homework'
+date: "`r Sys.Date()`"
+output:
+  pdf_document: default
+  html_document:
+    highlight: tango
+urlcolor: blue
+---
+
+```{r include = FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,                 # don't show code
+  warning = FALSE,              # don't show warnings
+  message = FALSE,              # don't show messages (less serious warnings)
+  cache = FALSE,                # set to TRUE to save results from last compilation
+  fig.align = "center",         # center figures
+  attr.source = '.numberLines'  # add line numbers to code
+)
+library(tidyverse)       # load libraries you always use here
+set.seed(27)             # make random results reproducible
+```
+
+## Notes on the YAML header
+
+- Be sure to change the title and author fields
+- The date is automatically set to the current day when knitting
+
+# Problem 1
+
+Here is a [link](https://adv-r.hadley.nz/). Your homework goes here.
+
+```{r eval=FALSE}
+fit <- lm(hp ~ ., mtcars)
+au <- broom::augment(fit)
+au %>% 
+  gather(x, val, -contains(".")) %>% 
+  ggplot(aes(val, .resid)) + 
+  geom_point() + 
+  facet_wrap(~x, scales = "free")
+```
+
+Yet more text, and another code section:
+
+```{r, eval=FALSE}
+knitr::kable(head(select(au, 1:5)))
+```
+
+# Code
+
+```{r ref.label = knitr::all_labels(), echo = TRUE, eval = FALSE}
+# this R markdown chunk generates a code appendix
+```
