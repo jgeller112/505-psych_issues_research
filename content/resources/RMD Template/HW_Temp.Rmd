@@ -1,5 +1,5 @@
 ---
-title: "PSYCH 503 Problem Set 1"
+title: "RMD Template"
 author: "Your Name Here"
 summary: 'RMD template for homework'
 date: "`r Sys.Date()`"
@@ -10,7 +10,7 @@ output:
 urlcolor: blue
 ---
 
-```{r include = FALSE}
+```{r include = TRUE}
 knitr::opts_chunk$set(
   echo = FALSE,                 # don't show code
   warning = FALSE,              # don't show warnings
@@ -32,7 +32,7 @@ set.seed(27)             # make random results reproducible
 
 Here is a [link](https://adv-r.hadley.nz/). Your homework goes here.
 
-```{r eval=FALSE}
+```{r, eval=FALSE}
 fit <- lm(hp ~ ., mtcars)
 au <- broom::augment(fit)
 au %>% 
