@@ -1,6 +1,6 @@
 ---
-title: "Research Issues and Practices in Psychology"
-subtitle: "Week 2: Markdown and Papaja"
+title: "PSY 505: Research Issues and Practices in Psychology"
+subtitle: "RMarkdown and Papaja"
 author: "Jason Geller, Ph.D."
 date:  '`r Sys.Date()`'
 output:
@@ -10,7 +10,7 @@ output:
       slideNumberFormat: "%current%"
       highlightStyle: github
       highlightLines: true
-      ratio: 18:14
+      ratio: 16:9
       countIncrementalSlides: true
       background-image: url("lover.png")
       background-size: cover
@@ -26,8 +26,9 @@ knitr::knit_hooks$set(source = function(x, options) {
 num_fmt <- scales::number_format(big.mark = ",")
 ```
 
-```{r, echo=FALSE}
-
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# install.packages("devtools")
+remotes::install_github("hadley/emo")
 library(emo)
 
 
@@ -38,7 +39,7 @@ class: middle
 
 - **Markdown:** a simple text-only format for writing documents
 - **R markdown:** a tool for mixing R code with markdown 
-- **Papaja:** Tool for writing APA style articles 
+- **Papaja:** tool for writing APA style articles 
 
 ---
 
@@ -56,6 +57,8 @@ if(!requireNamespace("tinytex", quietly = TRUE)) install.packages("tinytex")
 
 tinytex::install_tinytex()
 
+#this allows us to knit to pdf.You could #download latex but it is a big file.
+#tinytex works beautifully
 ```
 
 ---
@@ -66,8 +69,6 @@ knitr::include_graphics("open_rmd.png", dpi = 350)
 ```
 
 --- 
-
-
 ## R markdown is a "chimera"
 
 .pull-left[
@@ -938,7 +939,7 @@ knitr::include_graphics("papaja_hex.png", dpi = 1000)
 #remotes::install_github("crsh/papaja")
 
 # Install the latest development snapshot from GitHub
-#emotes::install_github("crsh/papaja@devel")
+#remotes::install_github("crsh/papaja@devel")
 
 
 ```

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Research Issues and Practices in Psychology</title>
+    <title>PSY 505: Research Issues and Practices in Psychology</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jason Geller, Ph.D." />
-    <meta name="date" content="2022-07-13" />
+    <meta name="date" content="2022-09-08" />
     <script src="02-Mardown_Papaja_files/header-attrs-2.14/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
@@ -12,10 +12,18 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Research Issues and Practices in Psychology
-## Week 2: Markdown and Papaja
+.title[
+# PSY 505: Research Issues and Practices in Psychology
+]
+.subtitle[
+## RMarkdown and Papaja
+]
+.author[
 ### Jason Geller, Ph.D.
-### 2022-07-13
+]
+.date[
+### 2022-09-08
+]
 
 ---
 
@@ -30,17 +38,27 @@ class: middle
 
 - **Markdown:** a simple text-only format for writing documents
 - **R markdown:** a tool for mixing R code with markdown 
-- **Papaja:** Tool for writing APA style articles 
+- **Papaja:** tool for writing APA style articles 
 
 ---
 
 # Installing R Markdown
+
 class: middle, inverse
 
 - First things first
 
 
+```r
+install.packages("rmarkdown")
 
+if(!requireNamespace("tinytex", quietly = TRUE)) install.packages("tinytex")
+
+tinytex::install_tinytex()
+
+#this allows us to knit to pdf.You could #download latex but it is a big file.
+#tinytex works beautifully
+```
 
 ---
 # Installing R Markdown
@@ -48,12 +66,10 @@ class: middle, inverse
 &lt;img src="open_rmd.png" width="100%" /&gt;
 
 --- 
-
-
 ## R markdown is a "chimera"
 
 .pull-left[
-&lt;img src="img/chimera.jpg" width="527" /&gt;
+![](img/chimera.jpg)&lt;!-- --&gt;
 ]
 
 --
@@ -74,7 +90,7 @@ class: middle, inverse
 ## R markdown is a "chimera"
 
 .pull-left[
-&lt;img src="img/chimera.jpg" width="527" /&gt;
+![](img/chimera.jpg)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -113,14 +129,14 @@ background-size: cover
 
 class: middle
 
-&lt;img src="img/word_document_surface.png" width="611" /&gt;
+![](img/word_document_surface.png)&lt;!-- --&gt;
 
 
 ---
 
 class: middle
 
-&lt;img src="img/word_document_inside.png" width="1133" /&gt;
+![](img/word_document_inside.png)&lt;!-- --&gt;
 
 ---
 
@@ -135,7 +151,7 @@ class: middle
 
 class: middle
 
-&lt;img src="img/html_document_surface.png" width="1396" height="80%" /&gt;
+&lt;img src="img/html_document_surface.png" height="80%" /&gt;
 
 
 
@@ -143,7 +159,7 @@ class: middle
 
 class: middle
 
-&lt;img src="img/html_document_inside.png" width="1199" /&gt;
+![](img/html_document_inside.png)&lt;!-- --&gt;
 
 
 ---
@@ -814,18 +830,14 @@ This `\(x^2\)` is inline
 &lt;img src="cleanup_code.jpeg" width="100%" /&gt;
 
 ---
-# Writing code with RMarkdown
 
-1. Open `code.Rmd`. 
-1. Read through the document and run the chunks one at a time. 
-1. Try any of the following:
-  - Create a new chunk that generates a different figure
-  - Add some chunk options to the header to control how the figure is printed; for example, `fig.cap="Caption here"` or `fig.width=5` or `results="hide"`. See [https://yihui.org/knitr/options/](https://yihui.org/knitr/options/) for details
-  - Put in new coordinates to the map chunk to map someplace you know
-  - Click "knit" at the top of the page and see what happens!
-  - If there is anything you want formatted differently in the html file output, try to fix it (hint: you might start with the chunk options for the first chunk, `setup`)
+# Visual Editor
 
+-One fairly new feature (and one reason we're using RStudio today!) is their new [visual markdown editor](https://rstudio.github.io/visual-markdown-editing/). It's basically an ultra powerful hybrid of Markdown and Microsoft Word. But be warned, it's a little buggy if you frequently switch editing modes. 
+
+-People write whole books in Markdown, and this may make that seem a little more achievable. For example, the new visual editor allows [easy citation management with a Zotero library](https://www.rstudio.com/blog/rstudio-1-4-preview-citations/) (if we have time, I'll show you this on my computer). 
 ---
+
 
 # Cheat Sheet
 
@@ -872,7 +884,7 @@ class: middle, inverse
 #remotes::install_github("crsh/papaja")
 
 # Install the latest development snapshot from GitHub
-#emotes::install_github("crsh/papaja@devel")
+#remotes::install_github("crsh/papaja@devel")
 ```
 
 ---
@@ -888,7 +900,7 @@ class: middle, inverse
 "slideNumberFormat": "%current%",
 "highlightStyle": "github",
 "highlightLines": true,
-"ratio": "18:14",
+"ratio": "16:9",
 "countIncrementalSlides": true,
 "background-image": "url(\"lover.png\")",
 "background-size": "cover"
@@ -932,6 +944,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
