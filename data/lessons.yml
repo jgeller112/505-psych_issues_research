@@ -25,6 +25,7 @@ lessons:
   - title: "Tutorial: Introduction to R/Markdown/Papaja"
     date: "Week 2 [T, 9/13]"
     notes: "HW 1 due"
+    class: "/02-Markdown/02-Markdown_Papaja"
     slides: ""
     reading: ""
     hasclass: True
