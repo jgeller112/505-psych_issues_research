@@ -33,8 +33,8 @@ lessons:
   - title: "Seminar: Robert Calin-Jageman, Ph.D. (Dominican University)"
     date: "Week 3 [T, 9/20]"
     slides: ""
-    notes: 'Prior to the talk Bob will lead a short workshop on ESCI in R and JAMOVI'
-    reading: "/reading/bob_calin-uncert.pdf"
+    notes: 'Download JAMOVI'
+    reading: "/bob_calin-uncert.pdf"
     hasclass: True
     
   - title: "Tutorial: Data Wrangling in R"
