@@ -36,7 +36,7 @@ lessons:
   - title: "Cheat Sheet"
     date: "Week 2 [T, 9/13]"
     notes: "HW 1 due"
-    class: "
+    class: ""
     slides: ""
     reading: "/rmarkdown-cheatsheet.pdf"
     hasclass: True
