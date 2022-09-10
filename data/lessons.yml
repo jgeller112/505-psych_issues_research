@@ -22,12 +22,23 @@ lessons:
     reading: ""
     hasclass: True
     
+    
   - title: "Tutorial: Introduction to R/Markdown/Papaja"
     date: "Week 2 [T, 9/13]"
     notes: "HW 1 due"
     class: "/02-Markdown/02-Markdown_Papaja"
+    assignment: "02" 
     slides: ""
     reading: ""
+    hasclass: True
+    hasassignment: True
+    
+  - title: "Cheat Sheet"
+    date: "Week 2 [T, 9/13]"
+    notes: "HW 1 due"
+    class: "
+    slides: ""
+    reading: "/rmarkdown-cheatsheet.pdf"
     hasclass: True
     
   - title: "Seminar: Robert Calin-Jageman, Ph.D. (Dominican University)"
