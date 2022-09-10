@@ -33,7 +33,7 @@ lessons:
   - title: "Seminar: Robert Calin-Jageman, Ph.D. (Dominican University)"
     date: "Week 3 [T, 9/20]"
     slides: ""
-    notes: 'Download JAMOVI'
+    notes: 'Cody Dong leading discussion. Please download jamovi'
     reading: "/bob_calin-uncert.pdf"
     hasclass: True
     
@@ -92,7 +92,7 @@ lessons:
   - title: "Antoine Coutrot, Ph.D.(French National Centre for Scientific Research)"
     date: "Week 11 [T, 11/15]"
     slides: ""
-    notes: "**Cody Dong** leading discussion"
+    notes: ""
     reading: ""
     hasclass: True
     hasassignment: True
