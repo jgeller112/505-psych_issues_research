@@ -382,35 +382,11 @@ citations.</li>
 text.</li>
 </ul>
 <pre class="r"><code># Knit the document using the Command + Shift + K shortcut (or by clicking the &quot;knit&quot; button at the top of your source editor)
-library(papaja) # load papaja</code></pre>
-<pre><code>## Loading required package: tinylabels</code></pre>
-<pre class="r"><code>library(yarrr) # To get the pirates dataframe</code></pre>
-<pre><code>## Loading required package: jpeg</code></pre>
-<pre><code>## Loading required package: BayesFactor</code></pre>
-<pre><code>## Loading required package: coda</code></pre>
-<pre><code>## Loading required package: Matrix</code></pre>
-<pre><code>## ************
-## Welcome to BayesFactor 0.9.12-4.4. If you have questions, please contact Richard Morey (richarddmorey@gmail.com).
-## 
-## Type BFManual() to open the manual.
-## ************</code></pre>
-<pre><code>## Loading required package: circlize</code></pre>
-<pre><code>## ========================================
-## circlize version 0.4.15
-## CRAN page: https://cran.r-project.org/package=circlize
-## Github page: https://github.com/jokergoo/circlize
-## Documentation: https://jokergoo.github.io/circlize_book/book/
-## 
-## If you use it in published research, please cite:
-## Gu, Z. circlize implements and enhances circular visualization
-##   in R. Bioinformatics 2014.
-## 
-## This message can be suppressed by:
-##   suppressPackageStartupMessages(library(circlize))
-## ========================================</code></pre>
-<pre><code>## yarrr v0.1.5. Citation info at citation(&#39;yarrr&#39;). Package guide at yarrr.guide()</code></pre>
-<pre><code>## Email me at Nathaniel.D.Phillips.is@gmail.com</code></pre>
-<pre class="r"><code># ---------------------
+library(papaja) # load papaja
+
+library(yarrr) # To get the pirates dataframe
+
+# ---------------------
 # Show APA syle conclusions from a t.test object
 # ------------------
 
@@ -424,36 +400,15 @@ sex_age_ttest &lt;- t.test(formula = age ~ sex,
 sex_age_ttest_apa &lt;- apa_print(sex_age_ttest)
 
 # Show all output types
-sex_age_ttest_apa</code></pre>
-<pre><code>## $estimate
-## [1] &quot;$\\Delta M = 4.96$, 95\\% CI $[4.29, 5.62]$&quot;
-## 
-## $statistic
-## [1] &quot;$t(949.43) = 14.53$, $p &lt; .001$&quot;
-## 
-## $full_result
-## [1] &quot;$\\Delta M = 4.96$, 95\\% CI $[4.29, 5.62]$, $t(949.43) = 14.53$, $p &lt; .001$&quot;
-## 
-## $table
-## A data.frame with 5 labelled columns:
-## 
-##   estimate     conf.int statistic     df p.value
-## 1     4.96 [4.29, 5.62]     14.53 949.43  &lt; .001
-## 
-## estimate : $\\Delta M$ 
-## conf.int : 95\\% CI 
-## statistic: $t$ 
-## df       : $\\mathit{df}$ 
-## p.value  : $p$ 
-## attr(,&quot;class&quot;)
-## [1] &quot;apa_results&quot; &quot;list&quot;</code></pre>
-<pre class="r"><code># Here are the different types of outputs
-names(sex_age_ttest_apa)</code></pre>
-<pre><code>## [1] &quot;estimate&quot;    &quot;statistic&quot;   &quot;full_result&quot; &quot;table&quot;</code></pre>
-<pre class="r"><code># Full output
-sex_age_ttest_apa$full_result</code></pre>
-<pre><code>## [1] &quot;$\\Delta M = 4.96$, 95\\% CI $[4.29, 5.62]$, $t(949.43) = 14.53$, $p &lt; .001$&quot;</code></pre>
-<pre class="r"><code># $\\Delta M = -4.96$, 95\\% CI $[4.29$, $5.62]$, $t(949.43) = 14.53$, $p &lt; .001$
+sex_age_ttest_apa
+
+# Here are the different types of outputs
+names(sex_age_ttest_apa)
+
+# Full output
+sex_age_ttest_apa$full_result
+
+# $\\Delta M = -4.96$, 95\\% CI $[4.29$, $5.62]$, $t(949.43) = 14.53$, $p &lt; .001$
 
 # ---------------------
 # Show APA syle conclusions from an lm (regression) object
@@ -468,104 +423,12 @@ tattoos_lm &lt;- lm(formula = tattoos ~ sex + headband + age,
 tattoos_lm_apa &lt;- apa_print(tattoos_lm)
 
 # Look at all outputs
-tattoos_lm_apa</code></pre>
-<pre><code>## $estimate
-## $estimate$Intercept
-## [1] &quot;$b = 4.19$, 95\\% CI $[3.01, 5.37]$&quot;
-## 
-## $estimate$sexmale
-## [1] &quot;$b = -0.03$, 95\\% CI $[-0.44, 0.37]$&quot;
-## 
-## $estimate$sexother
-## [1] &quot;$b = 0.61$, 95\\% CI $[-0.28, 1.51]$&quot;
-## 
-## $estimate$headbandyes
-## [1] &quot;$b = 5.37$, 95\\% CI $[4.80, 5.95]$&quot;
-## 
-## $estimate$age
-## [1] &quot;$b = 0.02$, 95\\% CI $[-0.02, 0.05]$&quot;
-## 
-## $estimate$modelfit
-## $estimate$modelfit$r2
-## [1] &quot;$R^2 = .25$, 90\\% CI $[0.21, 0.29]$&quot;
-## 
-## $estimate$modelfit$r2_adj
-## [1] &quot;$R^2_{adj} = .25$&quot;
-## 
-## $estimate$modelfit$aic
-## [1] &quot;$\\mathrm{AIC} = 4,984.38$&quot;
-## 
-## $estimate$modelfit$bic
-## [1] &quot;$\\mathrm{BIC} = 5,013.82$&quot;
-## 
-## 
-## 
-## $statistic
-## $statistic$Intercept
-## [1] &quot;$t(995) = 6.99$, $p &lt; .001$&quot;
-## 
-## $statistic$sexmale
-## [1] &quot;$t(995) = -0.17$, $p = .867$&quot;
-## 
-## $statistic$sexother
-## [1] &quot;$t(995) = 1.35$, $p = .177$&quot;
-## 
-## $statistic$headbandyes
-## [1] &quot;$t(995) = 18.38$, $p &lt; .001$&quot;
-## 
-## $statistic$age
-## [1] &quot;$t(995) = 0.96$, $p = .340$&quot;
-## 
-## $statistic$modelfit
-## $statistic$modelfit$r2
-## [1] &quot;$F(4, 995) = 84.70$, $p &lt; .001$&quot;
-## 
-## 
-## 
-## $full_result
-## $full_result$Intercept
-## [1] &quot;$b = 4.19$, 95\\% CI $[3.01, 5.37]$, $t(995) = 6.99$, $p &lt; .001$&quot;
-## 
-## $full_result$sexmale
-## [1] &quot;$b = -0.03$, 95\\% CI $[-0.44, 0.37]$, $t(995) = -0.17$, $p = .867$&quot;
-## 
-## $full_result$sexother
-## [1] &quot;$b = 0.61$, 95\\% CI $[-0.28, 1.51]$, $t(995) = 1.35$, $p = .177$&quot;
-## 
-## $full_result$headbandyes
-## [1] &quot;$b = 5.37$, 95\\% CI $[4.80, 5.95]$, $t(995) = 18.38$, $p &lt; .001$&quot;
-## 
-## $full_result$age
-## [1] &quot;$b = 0.02$, 95\\% CI $[-0.02, 0.05]$, $t(995) = 0.96$, $p = .340$&quot;
-## 
-## $full_result$modelfit
-## $full_result$modelfit$r2
-## [1] &quot;$R^2 = .25$, 90\\% CI $[0.21, 0.29]$, $F(4, 995) = 84.70$, $p &lt; .001$&quot;
-## 
-## 
-## 
-## $table
-## A data.frame with 6 labelled columns:
-## 
-##          term estimate      conf.int statistic  df p.value
-## 1   Intercept     4.19  [3.01, 5.37]      6.99 995  &lt; .001
-## 2     Sexmale    -0.03 [-0.44, 0.37]     -0.17 995    .867
-## 3    Sexother     0.61 [-0.28, 1.51]      1.35 995    .177
-## 4 Headbandyes     5.37  [4.80, 5.95]     18.38 995  &lt; .001
-## 5         Age     0.02 [-0.02, 0.05]      0.96 995    .340
-## 
-## term     : Predictor 
-## estimate : $b$ 
-## conf.int : 95\\% CI 
-## statistic: $t$ 
-## df       : $\\mathit{df}$ 
-## p.value  : $p$ 
-## attr(,&quot;class&quot;)
-## [1] &quot;apa_results&quot; &quot;list&quot;</code></pre>
-<pre class="r"><code># Full result for age
-tattoos_lm_apa$full_result$age</code></pre>
-<pre><code>## [1] &quot;$b = 0.02$, 95\\% CI $[-0.02, 0.05]$, $t(995) = 0.96$, $p = .340$&quot;</code></pre>
-<pre class="r"><code># Here is the full APA style conclusion for age
+tattoos_lm_apa
+
+# Full result for age
+tattoos_lm_apa$full_result$age
+
+# Here is the full APA style conclusion for age
 # $b = 0.02$, 95\\% CI $[-0.02$, $0.05]$, $t(995) = 0.96$, $p = .340$
 
 # ---------------------
@@ -577,78 +440,19 @@ tattoos_lm_apa$full_result$age</code></pre>
 tattoos_aov &lt;- car::Anova(tattoos_lm)
 
 # Get apa style results
-tattoos_aov_apa &lt;- apa_print(tattoos_aov)</code></pre>
-<pre><code>## Could not find Sum-of-Squares for the (Intercept) in the ANOVA table.</code></pre>
-<pre class="r"><code># Look at all outputs
-tattoos_aov_apa</code></pre>
-<pre><code>## $estimate
-## $estimate$sex
-## [1] &quot;$\\hat{\\eta}^2_G = .002$, 90\\% CI $[.000, .008]$&quot;
-## 
-## $estimate$headband
-## [1] &quot;$\\hat{\\eta}^2_G = .253$, 90\\% CI $[.217, .290]$&quot;
-## 
-## $estimate$age
-## [1] &quot;$\\hat{\\eta}^2_G = .001$, 90\\% CI $[.000, .007]$&quot;
-## 
-## 
-## $statistic
-## $statistic$sex
-## [1] &quot;$F(2, 995) = 1.04$, $p = .355$&quot;
-## 
-## $statistic$headband
-## [1] &quot;$F(1, 995) = 337.79$, $p &lt; .001$&quot;
-## 
-## $statistic$age
-## [1] &quot;$F(1, 995) = 0.91$, $p = .340$&quot;
-## 
-## 
-## $full_result
-## $full_result$sex
-## [1] &quot;$F(2, 995) = 1.04$, $p = .355$, $\\hat{\\eta}^2_G = .002$, 90\\% CI $[.000, .008]$&quot;
-## 
-## $full_result$headband
-## [1] &quot;$F(1, 995) = 337.79$, $p &lt; .001$, $\\hat{\\eta}^2_G = .253$, 90\\% CI $[.217, .290]$&quot;
-## 
-## $full_result$age
-## [1] &quot;$F(1, 995) = 0.91$, $p = .340$, $\\hat{\\eta}^2_G = .001$, 90\\% CI $[.000, .007]$&quot;
-## 
-## 
-## $table
-## A data.frame with 7 labelled columns:
-## 
-##       term estimate     conf.int statistic df df.residual p.value
-## 1      Sex     .002 [.000, .008]      1.04  2         995    .355
-## 2 Headband     .253 [.217, .290]    337.79  1         995  &lt; .001
-## 3      Age     .001 [.000, .007]      0.91  1         995    .340
-## 
-## term     : Effect 
-## estimate : $\\hat{\\eta}^2_G$ 
-## conf.int : 90\\% CI 
-## statistic: $F$ 
-## df       : $\\mathit{df}$ 
-## ... (2 more labels)
-## attr(,&quot;class&quot;)
-## [1] &quot;apa_results&quot; &quot;list&quot;</code></pre>
-<pre class="r"><code># Full result for sex
-tattoos_aov_apa$full_result$sex</code></pre>
-<pre><code>## [1] &quot;$F(2, 995) = 1.04$, $p = .355$, $\\hat{\\eta}^2_G = .002$, 90\\% CI $[.000, .008]$&quot;</code></pre>
-<pre class="r"><code># ANOVA table
-tattoos_aov_apa$table</code></pre>
-<pre><code>## A data.frame with 7 labelled columns:
-## 
-##       term estimate     conf.int statistic df df.residual p.value
-## 1      Sex     .002 [.000, .008]      1.04  2         995    .355
-## 2 Headband     .253 [.217, .290]    337.79  1         995  &lt; .001
-## 3      Age     .001 [.000, .007]      0.91  1         995    .340
-## 
-## term     : Effect 
-## estimate : $\\hat{\\eta}^2_G$ 
-## conf.int : 90\\% CI 
-## statistic: $F$ 
-## df       : $\\mathit{df}$ 
-## ... (2 more labels)</code></pre>
-<pre class="r"><code># ---------------------
+tattoos_aov_apa &lt;- apa_print(tattoos_aov)
+
+# Look at all outputs
+tattoos_aov_apa
+
+# Full result for sex
+tattoos_aov_apa$full_result$sex
+
+# ANOVA table
+tattoos_aov_apa$table
+
+
+# ---------------------
 # Show a APA style table of data
 # ------------------
 
@@ -656,95 +460,6 @@ tattoos_aov_apa$table</code></pre>
 
 apa_table(pirates[1:10, c(&quot;id&quot;, &quot;sex&quot;, &quot;age&quot;, &quot;tattoos&quot;, &quot;tchests&quot;)],
           caption = &quot;First few rows of the pirates dataframe&quot;)</code></pre>
-<caption>
-(#tab:unnamed-chunk-1)
-</caption>
-<div custom-style="Table Caption">
-<em>First few rows of the pirates dataframe</em>
-</div>
-<table>
-<thead>
-<tr class="header">
-<th align="left">id</th>
-<th align="left">sex</th>
-<th align="left">age</th>
-<th align="left">tattoos</th>
-<th align="left">tchests</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td align="left">1</td>
-<td align="left">male</td>
-<td align="left">28.00</td>
-<td align="left">9.00</td>
-<td align="left">0.00</td>
-</tr>
-<tr class="even">
-<td align="left">2</td>
-<td align="left">male</td>
-<td align="left">31.00</td>
-<td align="left">9.00</td>
-<td align="left">11.00</td>
-</tr>
-<tr class="odd">
-<td align="left">3</td>
-<td align="left">male</td>
-<td align="left">26.00</td>
-<td align="left">10.00</td>
-<td align="left">10.00</td>
-</tr>
-<tr class="even">
-<td align="left">4</td>
-<td align="left">female</td>
-<td align="left">31.00</td>
-<td align="left">2.00</td>
-<td align="left">0.00</td>
-</tr>
-<tr class="odd">
-<td align="left">5</td>
-<td align="left">female</td>
-<td align="left">41.00</td>
-<td align="left">9.00</td>
-<td align="left">6.00</td>
-</tr>
-<tr class="even">
-<td align="left">6</td>
-<td align="left">male</td>
-<td align="left">26.00</td>
-<td align="left">7.00</td>
-<td align="left">19.00</td>
-</tr>
-<tr class="odd">
-<td align="left">7</td>
-<td align="left">female</td>
-<td align="left">31.00</td>
-<td align="left">9.00</td>
-<td align="left">1.00</td>
-</tr>
-<tr class="even">
-<td align="left">8</td>
-<td align="left">female</td>
-<td align="left">31.00</td>
-<td align="left">5.00</td>
-<td align="left">13.00</td>
-</tr>
-<tr class="odd">
-<td align="left">9</td>
-<td align="left">female</td>
-<td align="left">28.00</td>
-<td align="left">12.00</td>
-<td align="left">37.00</td>
-</tr>
-<tr class="even">
-<td align="left">10</td>
-<td align="left">male</td>
-<td align="left">30.00</td>
-<td align="left">12.00</td>
-<td align="left">69.00</td>
-</tr>
-</tbody>
-</table>
 </div>
 <div id="get-started" class="section level1">
 <h1>Get started</h1>
@@ -761,7 +476,7 @@ To do this, open a new script. Then run code to save both data files
 into your data folder,</p></li>
 <li><p>Open a new R Markdown document using the papaja template. Save
 the file in the top level of your working directory (that is, next to
-the studentAPA.Rproj ) as studentAPA.Rmd</p></li>
+the studentAPA.Rproj as studentAPA.Rmd.</p></li>
 <li><p>Knit the document to see a simple APA style document! Do this by
 clicking the Knit button at the top of your source window, or by using
 the Command + Shift + K shortcut.</p></li>
@@ -771,9 +486,8 @@ of the text that was there before). Save the file.</p></li>
 <li><p>Open a new text file by clicking File – New File – Text File.
 Save the file in the top level of your working directory as
 studentAPA.bib</p></li>
-<li><p>In a web browser, go to <a href="https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib" class="uri">https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib</a>
-(<a href="https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib" class="uri">https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib</a>)
-.Copy all of the text, and paste it into your studentAPA.bib file. Save
+<li><p>In a web browser, go to (<a href="https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib" class="uri">https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib</a>.
+Copy all of the text, and paste it into your studentAPA.bib file. Save
 the file.</p></li>
 <li><p>Your goal is to create the following APA document( <a href="https://github.com/ndphillips/IntroductionR_Course/blob/master/assignments/wpa/studentAPA/studentAPA_comp.pdf?raw=true" class="uri">https://github.com/ndphillips/IntroductionR_Course/blob/master/assignments/wpa/studentAPA/studentAPA_comp.pdf?raw=true</a>)
 ) by adding elements to the studentAPA.Rmd document. In a web browser,
@@ -887,7 +601,7 @@ your document to see the result</strong>.</p></li>
 <div id="submit" class="section level1">
 <h1>Submit</h1>
 <ol start="23" style="list-style-type: decimal">
-<li>Save and email me your studentAPA.Rmd file, studentAPA.pdf, and
+<li>Save and upload your studentAPA.Rmd file, studentAPA.pdf, and
 studentAPA.doc.</li>
 </ol>
 </div>

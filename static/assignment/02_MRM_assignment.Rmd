@@ -8,7 +8,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 ```
 
 # Assignment Goals
@@ -111,17 +111,17 @@ apa_table(pirates[1:10, c("id", "sex", "age", "tattoos", "tchests")],
 (https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/data/studentmath.txt)
 (the mathdata) and
 (https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/data/studentpor.txt)
-(the portugesedata), we need to get these files into your data folder. To do this, open a new script. Then run code to save both data files into your data folder, 
+(the portugesedata), we need to get these files into your data folder. To do this, open a new script. Then run code to save both data files into your data folder,
 
 ```{r, load files, eval=FALSE}
-
 
 ```
 
 4. Open a new R Markdown document using the papaja template.  Save the file in the top level of your working directory (that is, next to the
-studentAPA.Rproj
-) as studentAPA.Rmd
+studentAPA.Rproj as studentAPA.Rmd. 
+
 5. Knit the document to see a simple APA style document! Do this by clicking the Knit button at the top of your source window, or by using the Command + Shift + K shortcut.
+
 6. In a web browser, go to
 https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA_blank.Rmd.Copy all of the text, and paste it into your
 studentAPA.Rmd file (replace all of the text that was there before). Save the file.
@@ -129,9 +129,7 @@ studentAPA.Rmd file (replace all of the text that was there before). Save the fi
 studentAPA.bib
 
 8. In a web browser, go to
-https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib
-(https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib)
-.Copy all of the text, and paste it into your
+(https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib. Copy all of the text, and paste it into your
 studentAPA.bib file. Save the file.
 
 9. Your goal is to create the following APA document(
@@ -203,4 +201,4 @@ and papaja::apa_print(sex.math.ttest)$full_result
 
 # Submit
 
-23. Save and email me your studentAPA.Rmd file, studentAPA.pdf, and studentAPA.doc.
+23. Save and upload your studentAPA.Rmd file, studentAPA.pdf, and studentAPA.doc.
