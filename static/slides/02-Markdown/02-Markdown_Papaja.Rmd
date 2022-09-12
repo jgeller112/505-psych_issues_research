@@ -10,13 +10,11 @@ output:
       slideNumberFormat: "%current%"
       highlightStyle: github
       highlightLines: true
-      ratio: 16:9
+      ratio: 16:10
       countIncrementalSlides: true
       background-image: url("lover.png")
       background-size: cover
 ---
-
-
 ```{r include=FALSE}
 hook_source <- knitr::knit_hooks$get('source')
 knitr::knit_hooks$set(source = function(x, options) {
@@ -42,10 +40,7 @@ class: middle
 - **Papaja:** tool for writing APA style articles 
 
 ---
-
 # Installing R Markdown
-
-class: middle, inverse
 
 - First things first
 
@@ -64,7 +59,7 @@ tinytex::install_tinytex()
 ---
 # Installing R Markdown
 
-```{r, echo=FALSE, out.width = "100%"}
+```{r, echo=FALSE, out.height = "70%"}
 knitr::include_graphics("open_rmd.png", dpi = 350)
 ```
 
@@ -400,7 +395,6 @@ class: middle, inverse
 
 --
 .pull-left[
-<br><br>
 ### What you type...
 <br>
 ```
@@ -411,7 +405,6 @@ this is ***bold italics***
 ]
 --
 .pull-right[
-<br><br>
 ### What you get...
 <br>
 
@@ -428,7 +421,6 @@ this is ***bold italics***
 
 --
 .pull-left[
-<br><br>
 ### What you type...
 <br>
 ```
@@ -440,7 +432,6 @@ this is ***bold italics***
 ]
 --
 .pull-right[
-<br><br>
 ### What you get...
 <br>
 
@@ -457,7 +448,6 @@ this is ***bold italics***
 
 --
 .pull-left[
-<br><br>
 ### What you type...
 <br>
 ```
@@ -468,7 +458,6 @@ this is ***bold italics***
 ]
 --
 .pull-right[
-<br><br>
 ### What you get...
 <br>
 
@@ -491,11 +480,11 @@ class: middle, inverse
 
 .hand[Do it yourself!]
 
-- create your own RMD
-- open a new plain markdown document
-- save it as `my_first_markdown.md`
-- write some markdown, build it to HTML file
-- try to use all these markdown features
+- Create your own RMD
+- Open a new plain markdown document
+- Save it as `my_first_markdown.md`
+- Write some markdown, build it to HTML file
+- Try to use all these markdown features
 
 
 ---
@@ -509,7 +498,7 @@ background-size: cover
   .huge-bisque-number[5]
 ]
 .pull-right-wide[
-<br><br><br>
+<br><br>
 .larger[.embolden[More markdown]]
 ```{r, echo=FALSE}
 #knitr::include_graphics("img/blogdown.png", dpi = 1000)
@@ -523,7 +512,6 @@ background-size: cover
 
 --
 .pull-left-wide[
-<br><br>
 ### What you type...
 <br>
 ```
@@ -533,7 +521,6 @@ https://placekitten.com
 ]
 --
 .pull-right-narrow[
-<br><br>
 ### What you get...
 <br>
 https://placekitten.com
@@ -916,7 +903,7 @@ class: middle, inverse
 # Papaja
 
 .pull_right[
-```{r, echo=FALSE, out.width = "100%"}
+```{r, echo=FALSE, out.width = "50%", out.height="50%"}
 knitr::include_graphics("papaja_hex.png", dpi = 1000)
 ```
 ]
