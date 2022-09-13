@@ -1,7 +1,8 @@
 ---
 title: "PSY 505: Research Issues and Practices in Psychology"
-subtitle: "RMarkdown and Papaja"
-author: "Jason Geller, Ph.D."
+subtitle: "R Markdown and Papaja"
+Institute: "Princeton University"
+author: "Jason Geller, Ph.D. (he/him/his)"
 date:  '`r Sys.Date()`'
 output:
   xaringan::moon_reader:
@@ -481,11 +482,10 @@ class: middle, inverse
 .hand[Do it yourself!]
 
 - Create your own RMD
-- Open a new plain markdown document
+- Open a new markdown document
 - Save it as `my_first_markdown.md`
 - Write some markdown, build it to HTML file
 - Try to use all these markdown features
-
 
 ---
 
@@ -530,9 +530,7 @@ https://placekitten.com
 
 
 ---
-
 ## Inserting local images
-
 --
 .pull-left[
 ### What you type...
@@ -808,6 +806,7 @@ class: middle, inverse
 .hand[Do it yourself!]
 
 - Practice editing the YAML header
+- Delete everything but the header and knit. What changed?
 - Try creating different outputs and themes
 - Try creating a floating table of contents
 - Try to get it to not float!
@@ -830,8 +829,6 @@ background-size: cover
 #knitr::include_graphics("img/blogdown.png", dpi = 1000)
 ```
 ]
-
-
 ---
 
 ## An overview
@@ -855,8 +852,7 @@ $$
 ```
 ]
 --
-.pull-right[
-This $x^2$ is inline
+.pull-right[This $x^2$ is inline]
 
 ---
 # Hiding the Mess
@@ -871,11 +867,17 @@ knitr::include_graphics("cleanup_code.jpeg", dpi = 1000)
 
 ---
 
+# Exercise
+
+- Edit the code chunks that are contained within the default template
+
+- Add a fig caption
+
 # Visual Editor
 
--One fairly new feature (and one reason we're using RStudio today!) is their new [visual markdown editor](https://rstudio.github.io/visual-markdown-editing/). It's basically an ultra powerful hybrid of Markdown and Microsoft Word. But be warned, it's a little buggy if you frequently switch editing modes. 
+- One fairly new feature (and one reason we're using RStudio today!) is their new [visual markdown editor](https://rstudio.github.io/visual-markdown-editing/). It's basically an ultra powerful hybrid of Markdown and Microsoft Word. But be warned, it's a little buggy if you frequently switch editing modes. 
 
--People write whole books in Markdown, and this may make that seem a little more achievable. For example, the new visual editor allows [easy citation management with a Zotero library](https://www.rstudio.com/blog/rstudio-1-4-preview-citations/) (if we have time, I'll show you this on my computer). 
+- People write whole books in Markdown, and this may make that seem a little more achievable. For example, the new visual editor allows [easy citation management with a Zotero library](https://www.rstudio.com/blog/rstudio-1-4-preview-citations/) (if we have time, I'll show you this on my computer). 
 ---
 
 
@@ -932,7 +934,6 @@ knitr::include_graphics("papaja_hex.png", dpi = 1000)
 ```
 
 ---
-
 # Open Papaja
 
 ```{r, echo=FALSE, out.width = "100%"}
