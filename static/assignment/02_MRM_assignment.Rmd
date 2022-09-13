@@ -8,7 +8,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Assignment Goals
@@ -19,9 +19,9 @@ raw=true)) using R markdown and the papaja package
 - Cite articles using .bib files and appropirate bibtex citations.
 - Use in-line ‘minichunks’ to incporate R output directly into your text.
 
-```{r}
+```{r, eval=FALSE}
 # Knit the document using the Command + Shift + K shortcut (or by clicking the "knit" button at the top of your source editor)
-library(papaja) # load papaja
+library() # load papaja
 
 library(yarrr) # To get the pirates dataframe
 
@@ -101,36 +101,44 @@ apa_table(pirates[1:10, c("id", "sex", "age", "tattoos", "tchests")],
           caption = "First few rows of the pirates dataframe")
 ```
 
-# Get started
+# Get Started
 
 1. Create a new R project called studentAPA.RProj
-
 2. Navigate to the project directory (the one you just put studentAPA.RProj in). Create two new folders R and data in your project directory.
-
 3. The two data files you need for this assignment are located at
+https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/data/studentmath.txt
 (https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/data/studentmath.txt)
 (the mathdata) and
+https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/data/studentpor.txt
 (https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/data/studentpor.txt)
-(the portugesedata), we need to get these files into your data folder. To do this, open a new script. Then run code to save both data files into your data folder,
+(the portugesedata), we need to get these files into your data folder. To do this, open a new script. Then run code to save both data files into your data folder, 
 
-```{r, load files, eval=FALSE}
+```{r, load files}
+
 
 ```
 
 4. Open a new R Markdown document using the papaja template.  Save the file in the top level of your working directory (that is, next to the
-studentAPA.Rproj as studentAPA.Rmd. 
-
+studentAPA.Rproj
+) as studentAPA.Rmd
 5. Knit the document to see a simple APA style document! Do this by clicking the Knit button at the top of your source window, or by using the Command + Shift + K shortcut.
 
 6. In a web browser, go to
-https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA_blank.Rmd.Copy all of the text, and paste it into your
+https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA_blank.Rmd
+(https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA_blank.Rmd)
+
+Copy all of the text, and paste it into your
 studentAPA.Rmd file (replace all of the text that was there before). Save the file.
+
 7. Open a new text file by clicking File – New File – Text File. Save the file in the top level of your working directory as
 studentAPA.bib
 
 8. In a web browser, go to
-(https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib. Copy all of the text, and paste it into your
+https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib
+(https://raw.githubusercontent.com/ndphillips/IntroductionR_Course/master/assignments/wpa/studentAPA/studentAPA.bib)
+.Copy all of the text, and paste it into your
 studentAPA.bib file. Save the file.
+
 
 9. Your goal is to create the following APA document(
 https://github.com/ndphillips/IntroductionR_Course/blob/master/assignments/wpa/studentAPA/studentAPA_comp.pdf?raw=true)
@@ -139,13 +147,13 @@ studentAPA.Rmd
 document. In a web browser, go to the link above to download the
 studentAPA_comp.pdf file and see how it looks.
 
-# Adding Titles and Knitting
+# Adding titles and knitting
 
-10. In studentAPA.Rmd, replace the X values in the main fields at the top of the document (name, paper title, short-title, affiliation)with the appropriate names and titles.
+10. In studentAPA.Rmd, replace the X values in the main fields at the top of the document (name, paper title, short-title, affiliation) with the appropriate names and titles.
 
 11. Now Knit your document to see the current version of the PDF output! You can do this by clicking the “Knit” button at the top of your window or by using the Command + Shift + K shortcut (on Mac).
 
-# Add References to .bib
+# Add References to .bib 
 
 12. Now it’s time to add some references to your
 studentAPA.bib file! You will be referencing three papers in this document. Using
@@ -158,17 +166,15 @@ studentAPA.Rmd
 document in the format@abedi2001language. Now cite the additional papers in your studentAPA.bib
 file by replacing the XXX values with the appropriate citations. Knit your document to see the result. 
 
-# Load data
+# Load Data
 
 14. You need to load your data in a separate chunk.
 **Knit your document to see the result**
-
 If you don’t see any errors, then the data should have been correctly loaded!
-
 15. In the Participants section, there are inline code chunks that should indicate the number of participants in each data set. Replace the 1+1
 values with nrow(student.por) and nrow(student.math)
 to get the number of students in each data set.
-Knit your document to see the results
+Knit yourvdocument to see the result
 
 # Add Plots
 
@@ -180,14 +186,12 @@ eval = TRUE , update the caption.
 **Knit your document to see the result**
 
 # Look at Different Document Classes
-
 18. You can render your document in one of three document classes: doc (document), man (manuscript) and pub
 (publication). At the top of your Markdown file, you’ll see the text class: man. Change the class to doc and knit. Then change the class to pub and knit. Look at the new outputs!
 
-# Add statistics
+# Add Statistics
 
 19. Below the Figure 1 chunk, there are some inline chunks that calculate the mean grades for exam 1 and exam 3 of the Portuguese data. Update these chunks with the correct code to calculate the mean G3 scores for the math and portugese datasets. **Knit your document to see the result**. 
-
 20. The next two chunks create tables of summary statistics for the Math and Portuguese data. Update the captions in these chunks.Then, change eval = FALSE
 to eval = TRUE in the chunk options.
 **Knit your document to see the result**. You should now see the tables in your document.
@@ -201,4 +205,4 @@ and papaja::apa_print(sex.math.ttest)$full_result
 
 # Submit
 
-23. Save and upload your studentAPA.Rmd file, studentAPA.pdf, and studentAPA.doc.
+23. Save and email me your studentAPA.Rmd file, studentAPA.pdf, and studentAPA.doc.
