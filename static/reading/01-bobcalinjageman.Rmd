@@ -1,0 +1,14 @@
+---
+title: "Bob Calin-Jageman Talk"
+date: '`r Sys.Date()`'
+---
+# Title 
+
+Better Inference in Psychological Science: Test Less, Estimate More
+
+# Abstract
+The estimation approach to inference emphasizes effect sizes, confidence intervals, meta-analysis, and the use of Open Science practices.  Emphasizing estimation over testing could improve inference in psychological science: by nudging researchers away from invalid interpretations of tests, by providing a more straightforward way to plan for sensible sample sizes, and by providing a framework for fair testing.  In this seminar I’ll illustrate the benefits of estimation thinking with examples from the literature on oxytocin and trust, a research area that typifies some of the endemic problems that arise with poor statistical practice. 
+
+# Reading
+
+[Calin-Jageman 2021]("/bob_calin-uncert.pdf")
