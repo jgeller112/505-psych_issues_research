@@ -1,0 +1,18 @@
+---
+title: "Daniel Lakens Talk"
+date: '`r Sys.Date()`'
+---
+# Title 
+ 
+Proving yourself wrong: Why p-values are so important in science
+
+ 
+# Abstract 
+
+A small but fanatical group of scientists greatly enjoys criticizing statistical practices such as hypothesis testing and dichotomous decisions based on p-values. As statistical training focusses more on how to compute p-values than why we are computing them, researchers might feel uncertain about whether their use of p-values is defensible. In this talk, I will discuss why Neyman-Pearson hypothesis testing plays a unique, and often not appreciated, role in knowledge generation. The direct ties to a methodological falsificationist philosophy of science make hypothesis tests and claims based on p-values an approach to statistical inferences that works surprisingly well if one takes into account the social aspects of doing science. I will discuss why the correct frequentist use of p-values – which requires carefully designed studies that control error rates – rightfully plays such an important role in science, and why alternative approaches to statistical inferences can’t replace them.
+
+# Reading
+
+[TOST blog](http://daniellakens.blogspot.com/2016/12/tost-equivalence-testing-r-package.html)
+
+[Lakens 2017]("/tost.pdf")
