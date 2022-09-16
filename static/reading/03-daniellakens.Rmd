@@ -15,4 +15,4 @@ A small but fanatical group of scientists greatly enjoys criticizing statistical
 
 [TOST blog](http://daniellakens.blogspot.com/2016/12/tost-equivalence-testing-r-package.html)
 
-[Lakens 2017]("/tost.pdf")
+[Lakens 2017]("tost.pdf")
