@@ -11,4 +11,4 @@ The estimation approach to inference emphasizes effect sizes, confidence interva
 
 # Reading
 
-[Calin-Jageman 2021]("bob_calin-uncert.pdf")
+[Calin-Jageman 2021](bob_calin-uncert.pdf)
