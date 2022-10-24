@@ -79,7 +79,8 @@ lessons:
   - title: "Discussion: Open Science and Replication/Reproducibility"
     date: "Week 8 [T, 10/25]"
     slides: ""
-    notes: "**Sydney Garcia** leading dicussion. How to preregister a study/experiment"
+    class: "/prereg/prereg"
+    notes: 
     reading: ""
     hasclass: True
     hasassignment: True
