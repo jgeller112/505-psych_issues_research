@@ -10,7 +10,7 @@
   <meta name="generator" content="quarto-1.0.36">
 
   <meta name="author" content="Jason Geller">
-  <title>Preregistration</title>
+  <title>A Hands-On Introduction to Preregistration</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -25,6 +25,7 @@
     ul.task-list{list-style: none;}
   </style>
   <link rel="stylesheet" href="prereg_files/libs/revealjs/dist/theme/quarto.css" id="theme">
+  <link rel="stylesheet" href="styles.css">
   <link href="prereg_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="prereg_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="prereg_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -318,16 +319,29 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="center">
-  <h1 class="title">Preregistration</h1>
+<section id="title-slide" data-background-image="badge.png" data-background-opacity="0.5" data-background-size="contain" class="center">
+  <h1 class="title">A Hands-On Introduction to Preregistration</h1>
   <p class="author">Jason Geller</p>
   <p class="institute">Princeton Univeristy</p>
   <p class="date">10-21-22</p>
 </section>
 
-<section class="slide level2">
-
+<section id="outline" class="title-slide slide level1 center">
+<h1>Outline</h1>
+<ul>
+<li class="fragment"><p>The replication crisis</p></li>
+<li class="fragment"><p>How did we get here?</p></li>
+<li class="fragment"><p>Pregistration</p>
+<ul>
+<li class="fragment">What</li>
+<li class="fragment">Why</li>
+<li class="fragment">Where</li>
+<li class="fragment">How</li>
+</ul></li>
+<li class="fragment"><p>Do’s and dont’s of preregistration</p></li>
+</ul>
 </section>
+
 <section>
 <section id="poll" class="title-slide slide level1 center">
 <h1>Poll</h1>
@@ -336,30 +350,43 @@
 </iframe>
 </div>
 </section>
-<section id="the-replication-crisis-a-timeline" class="slide level2 smaller">
+<section id="the-replication-crisis-a-timeline" class="slide level2">
 <h2>The Replication Crisis: A Timeline</h2>
-<div>
-<ul>
-<li class="fragment"><p>2011 - Daryl Bem published a paper in JPSP(top journal) claiming to have found evidence that ESP exists</p></li>
-<li class="fragment"><p>2011 - Diederik Stapel busted for fabricating data(58 papers retracted to date)</p></li>
-<li class="fragment"><p>2015 - Open Science Collaboration attempted to replicate 100 studies published in 3 top psychology journals in 2008</p></li>
-</ul>
+<div class="column-page">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="reptimeline.png"></p>
+<p></p><figcaption>Daniel Lakens blog post</figcaption><p></p>
+</figure>
+</div>
 </div>
 </section>
-<section id="open-science-collaboration-2015" class="slide level2 smaller">
+<section id="a-demo" class="slide level2">
+<h2>A demo</h2>
+</section>
+<section id="the-replication-crisis-a-timeline-1" class="slide level2">
+<h2>The Replication Crisis: A Timeline</h2>
+<div class="column-page">
+<p><img data-src="bem.png"></p>
+</div>
+</section>
+<section id="the-replication-crisis-a-timeline-2" class="slide level2">
+<h2>The Replication Crisis: A Timeline</h2>
+<div class="column-page">
+<p><img data-src="stapel.png"></p>
+</div>
+</section>
+<section id="open-science-collaboration-2015" class="slide level2">
 <h2>Open Science Collaboration (2015)</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
 <ul>
 <li class="fragment"><p>Replications used materials supplied by original authors and were high-powered</p>
 <ul>
-<li class="fragment"><p>Results: 39% of the original studies were successfully replicated</p>
+<li class="fragment">Results: 39% of the original studies were successfully replicated
 <ul>
 <li class="fragment">25% of social psychology studies replicated</li>
-<li class="fragment">50% of cognitive psychology studies replicated
-<ul>
-<li class="fragment">Effect sizes overestimated in original studies</li>
-</ul></li>
+<li class="fragment">50% of cognitive psychology studies replicated</li>
 </ul></li>
 </ul></li>
 </ul>
@@ -376,92 +403,57 @@
 </div>
 </div>
 </section>
-<section id="do-we-have-a-problem" class="slide level2">
-<h2>Do we have a problem?</h2>
-
-<img data-src="iscrisis.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
-<section id="potential-reasons-for-the-replication-crisis" class="slide level2">
-<h2>Potential reasons for the replication crisis</h2>
-<ul>
-<li class="fragment"><p>False Positive Psychology (Simmons, Nelson, &amp; Simonsohn, 2011)</p></li>
-<li class="fragment"><p>Low power in replication studies?</p></li>
-</ul>
-</section>
-<section id="the-dangers-of-false-positives" class="slide level2">
-<h2>The Dangers of False Positives</h2>
-<ul>
-<li class="fragment"><p>Can be dangerous</p>
-<ul>
-<li class="fragment">E.g., health research: claim that a treatment is effective when actually it isn’t, or even has negative side effects</li>
-</ul></li>
-<li class="fragment"><p>Wastes resources</p>
-<ul>
-<li class="fragment">Researchers waste time, effort, and money conducting research on effects that don’t actually exist</li>
-</ul></li>
-<li class="fragment"><p>Hard to exercise false positives from the literature</p></li>
-<li class="fragment"><p>Not enough incentives for researchers to conduct replications that debunk the false positives</p></li>
-<li class="fragment"><p>Erodes the credibility of psychological science</p></li>
-</ul>
+<section id="potential-reasons" class="slide level2">
+<h2>Potential Reasons</h2>
+<p>High false positive rate in original studies (Simmons, Nelson, &amp; Simonsohn, 2011)?</p>
+<div class="column-page">
+<p><img data-src="FPP.png"></p>
+</div>
 </section>
 <section id="why-do-we-have-a-problem" class="slide level2">
 <h2>Why do we have a problem?</h2>
 <ul>
-<li class="fragment"><p>Researcher Degrees of Freedom</p>
-<ul>
-<li class="fragment"><p>Researchers may engage in questionable research practices (QPRs) not because they intend to be dishonest</p></li>
-<li class="fragment"><p>Rather, they are motivated to make decisions that support their hypotheses</p></li>
-<li class="fragment"><p>Make decisions so that p-value will be below .05 and can claim statistical significance</p></li>
-</ul></li>
+<li class="fragment">Researchers’ Degrees of Freedom</li>
 </ul>
-</section>
-<section id="anything-can-become-significant-with-a-creative-approach" class="slide level2">
-<h2>Anything can become significant with a creative approach</h2>
-<p>:::</p>
-<div class="column" style="width:60%;">
+<div class="columns">
+<div class="column" style="width:40%;">
 <ul>
 <li class="fragment">Optional stopping (ending data collection when p&lt;0.05)</li>
 <li class="fragment">Selective reporting of variables and conditions</li>
 <li class="fragment">Exclusion of participants (“Outlier”)</li>
-<li class="fragment">Conducting tons of analyses but only report the one that best fits the hypothesis (“Garden of forking paths”)</li>
 </ul>
-</div>
-<div class="column" style="width:60%;">
+</div><div class="column" style="width:60%;">
 <ul>
+<li class="fragment">Conducting tons of analyses but only report the one that best fits the hypothesis (“Garden of forking paths”)</li>
 <li class="fragment">Adding covariates to the analysis</li>
 <li class="fragment">Transforming the data</li>
 <li class="fragment">Forming hypotheses post-hoc (HARKing)</li>
 </ul>
 </div>
+</div>
 </section>
 <section id="potential-soloutions" class="slide level2">
 <h2>Potential Soloutions</h2>
 <ul>
-<li class="fragment"><p>Preregistration</p></li>
+<li class="fragment"><p>Preregistration</p>
+<ul>
 <li class="fragment"><p>A formalized (time-stamped) document that specifies all hypotheses &amp; methodological choices in writing prior to data collection</p>
 <ul>
 <li class="fragment"><p>Reduces RDoF</p></li>
-<li class="fragment"><p>Can’t p-hack</p></li>
+<li class="fragment"><p>Makes it hard to p-hack</p></li>
 <li class="fragment"><p>Can’t HARK</p></li>
 </ul></li>
+</ul></li>
 </ul>
-</section>
-<section id="what-is-pregregistration" class="slide level2">
-<h2>What is pregregistration?</h2>
-<ul>
-<li class="fragment"><p>Specification of your research plan before gathering any data</p></li>
-<li class="fragment"><p>Separating hypothesis-generating (exploratory) from hypothesis- testing (confirmatory) research as the same data cannot be used to generate and test a hypothesis</p></li>
-<li class="fragment"><p>Planning improves the quality and transparency of your research, and helps others who may wish to build on it</p></li>
-</ul>
-<p>https://cos.io/prereg/</p>
 </section>
 <section id="why-preregister" class="slide level2">
 <h2>Why Preregister?</h2>
 <ul>
+<li class="fragment"><p>Planning improves the quality and transparency of your research</p></li>
+<li class="fragment"><p>Facilitates replication/reproducibility</p></li>
 <li class="fragment"><p>Makes the research process more transparent</p></li>
-<li class="fragment"><p>Makes you thoroughly think through your data collection and analysis before starting</p></li>
 <li class="fragment"><p>Allows to clearly distinguish between a priori and post-hoc decisions (confirmatory and exploratory analyses)</p></li>
 <li class="fragment"><p>Strict documentation of studies</p></li>
-<li class="fragment"><p>Allows others to reproduce your results sharing)</p></li>
 <li class="fragment"><p>Makes it harder to fool yourself and others</p></li>
 </ul>
 </section>
@@ -470,11 +462,10 @@
 <ul>
 <li class="fragment">Everything you can specify beforehand</li>
 <li class="fragment">Fixed decisions (e.g., outcome measures)</li>
-<li class="fragment">Decision rules (e.g., “if we cannot collect 100 participants until June 5, 2020, we will stop the data collection that very day and…“)</li>
+<li class="fragment">Decision rules (e.g., “if we cannot collect 100 participants until June 5, 2020, we will stop the data collection that very day and…”)</li>
 <li class="fragment">Statistical models (ideally analysis scripts, including data-dependent decision rules)</li>
 <li class="fragment">Rules for interpretation we will interpret an effect size of X as support for our hypothesis that…“)</li>
 <li class="fragment">General rules of your lab regarding standard operation procedures (SOP) or outlier exclusion</li>
-<li class="fragment">Following established templates makes sure you don’t miss</li>
 </ul>
 </section>
 <section id="where-to-preregister" class="slide level2">
@@ -485,8 +476,7 @@
 <li class="fragment">Large number of templates</li>
 <li class="fragment">All participating authors can cancel within 48 hours</li>
 <li class="fragment">Prereg can be kept private for up to four years but then gets published</li>
-<li class="fragment">Withdrawing possible but leaves behind</li>
-<li class="fragment">Basic metadata</li>
+<li class="fragment">Withdrawing possible but leaves behind basic metadata</li>
 <li class="fragment">Also allows to make scripts, materials, preprints public</li>
 </ul></li>
 </ul>
@@ -494,8 +484,12 @@
 <section id="where-to-preregister-1" class="slide level2">
 <h2>Where to Preregister?</h2>
 <ul>
-<li class="fragment">Aspredicted.org - Short: 9 questions - All authors approve<br>
-- Does not become public until authors act to publish it</li>
+<li class="fragment">Aspredicted.org
+<ul>
+<li class="fragment"><p>Short: 9 questions</p></li>
+<li class="fragment"><p>All authors approve</p></li>
+<li class="fragment"><p>Does not become public until authors act to publish it</p></li>
+</ul></li>
 </ul>
 </section>
 <section id="when-to-preregister" class="slide level2">
@@ -532,10 +526,18 @@
 <li class="fragment"><p>A textbox will appear</p>
 <ul>
 <li class="fragment">Enter a title for your preregistration into the textbox, then click <strong>Continue</strong></li>
-</ul></li>
 </ul>
-
-<img data-src="step2.1.png" style="width:70.0%" class="r-stretch quarto-figure-center"></section>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="step2.1.png" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div></li>
+</ul>
+</section>
 <section id="preregistration-3" class="slide level2">
 <h2>Preregistration</h2>
 <ul>
@@ -589,7 +591,7 @@
 <li class="fragment"><p>Dependent Variable</p>
 <ul>
 <li class="fragment"><p>Bad answer: Preference for the color blue</p></li>
-<li class="fragment"><p>Good answer: Participants will rate their liking for red, blue, orange, and purple on 7-points scales (1 = not at all; 7 = an extreme amount). Preference for blue will be defined as the difference between a participant‘s rating for blue and their average rating of the three non- blue.</p></li>
+<li class="fragment"><p>Good answer: Participants will rate their liking for red, blue, orange, and purple on 7-points scales (1 = not at all; 7 = an extreme amount). Preference for blue will be defined as the difference between a participant’s rating for blue and their average rating of the three non- blue.</p></li>
 </ul></li>
 </ul>
 </section>
@@ -642,11 +644,21 @@
 </ul></li>
 </ul>
 
-<img data-src="rrr.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
+<img data-src="RRR.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
 <section id="potential-solutions-1" class="slide level2">
 <h2>Potential Solutions</h2>
-<p>::: columns ::: {.column width=“40%”} - Registered Reports - Reduces RDoF - Can’t p-hack - Can’t HARK - Reduces publication bias :::</p>
+<div class="columns">
 <div class="column" style="width:40%;">
+<ul>
+<li class="fragment">Registered Reports
+<ul>
+<li class="fragment">Reduces RDoF</li>
+<li class="fragment">Can’t p-hack</li>
+<li class="fragment">Can’t HARK</li>
+<li class="fragment">Reduces publication bias</li>
+</ul></li>
+</ul>
+</div><div class="column" style="width:60%;">
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
@@ -657,6 +669,8 @@
 </div>
 </div>
 </div>
+</div>
+<p><img src="badge.png" class="slide-logo"></p>
 <div class="footer footer-default">
 
 </div>
