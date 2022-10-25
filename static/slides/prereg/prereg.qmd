@@ -18,6 +18,7 @@ format:
     incremental: true
 editor: visual
 ---
+
 # Outline
 
 -   The replication crisis
@@ -26,10 +27,10 @@ editor: visual
 
 -   Pregistration
 
-    - What
-    - Why 
-    - Where
-    - How 
+    -   What
+    -   Why
+    -   Where
+    -   How
 
 -   Do's and dont's of preregistration
 
@@ -47,7 +48,7 @@ editor: visual
 ![Daniel Lakens blog post](reptimeline.png)
 :::
 
-## A demo
+## Psi Demo
 
 ## The Replication Crisis: A Timeline
 
@@ -58,13 +59,12 @@ editor: visual
 ## The Replication Crisis: A Timeline
 
 ::: column-page
-![](stapel.png)
+![](correct.png)
 :::
 
 ## Open Science Collaboration (2015)
 
 ::: columns
-
 ::: {.column width="40%"}
 -   Replications used materials supplied by original authors and were high-powered
 
@@ -80,6 +80,7 @@ knitr::include_graphics("repproj.jpg")
 ```
 :::
 :::
+
 ## Potential Reasons
 
 High false positive rate in original studies (Simmons, Nelson, & Simonsohn, 2011)?
@@ -93,15 +94,14 @@ High false positive rate in original studies (Simmons, Nelson, & Simonsohn, 2011
 -   Researchers' Degrees of Freedom
 
 ::: columns
-
 ::: {.column width="40%"}
--   Optional stopping (ending data collection when p<0.05)
+-   Optional stopping (ending data collection when p\<0.05)
 -   Selective reporting of variables and conditions
 -   Exclusion of participants ("Outlier")
 :::
 
 ::: {.column width="60%"}
--  Conducting tons of analyses but only report the one that best fits the hypothesis ("Garden of forking paths")
+-   Conducting tons of analyses but only report the one that best fits the hypothesis ("Garden of forking paths")
 -   Adding covariates to the analysis
 -   Transforming the data
 -   Forming hypotheses post-hoc (HARKing)
@@ -137,11 +137,11 @@ High false positive rate in original studies (Simmons, Nelson, & Simonsohn, 2011
 ## What to preregister?
 
 -   Everything you can specify beforehand
-  -   Fixed decisions (e.g., outcome measures)
-  -   Decision rules (e.g., "if we cannot collect 100 participants until June 5, 2020, we will stop the data collection that very day and...")
-  -   Statistical models (ideally analysis scripts, including data-dependent decision rules)
-  -   Rules for interpretation we will interpret an effect size of X as support for our hypothesis that...")
-  -   General rules of your lab regarding standard operation procedures (SOP) or outlier exclusion
+-   Fixed decisions (e.g., outcome measures)
+-   Decision rules (e.g., "if we cannot collect 100 participants until June 5, 2020, we will stop the data collection that very day and...")
+-   Statistical models (ideally analysis scripts, including data-dependent decision rules)
+-   Rules for interpretation we will interpret an effect size of X as support for our hypothesis that...")
+-   General rules of your lab regarding standard operation procedures (SOP) or outlier exclusion
 
 ## Where to Preregister?
 
@@ -295,15 +295,15 @@ knitr::include_graphics("step5.png")
 
 -   Sample size
 
-    - Bad answer: We conducted a power analysis that showed that... And so we decided to collect between 100 and 200 observations
+    -   Bad answer: We conducted a power analysis that showed that... And so we decided to collect between 100 and 200 observations
 
     -   Good answer: We will stop data collection once 150 participants have submitted a response on MTurk. Deviations from this goal are entirely due to MTurk software and outside of our control.
 
 ## Potential Solutions
 
-- Registered Reports
+-   Registered Reports
 
-    - Review and acceptance prior to data collection
+    -   Review and acceptance prior to data collection
 
 ```{r, fig.align='center', echo=FALSE, warning=FALSE,  out.width = "80%"}
 
@@ -313,13 +313,12 @@ knitr::include_graphics("RRR.png")
 ## Potential Solutions
 
 ::: columns
-
 ::: {.column width="40%"}
-- Registered Reports 
-  - Reduces RDoF 
-  - Can't p-hack 
-  - Can't HARK 
-  - Reduces publication bias 
+-   Registered Reports
+    -   Reduces RDoF
+    -   Can't p-hack
+    -   Can't HARK
+    -   Reduces publication bias
 :::
 
 ::: {.column width="60%"}
@@ -329,6 +328,3 @@ knitr::include_graphics("rrrpic.png")
 ```
 :::
 :::
-
-
-
