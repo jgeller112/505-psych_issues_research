@@ -61,6 +61,11 @@ editor: visual
 ::: column-page
 ![](correct.png)
 :::
+## Open Science Collaboration (2015)
+
+::: column-page
+![](stapel.png)
+:::
 
 ## Open Science Collaboration (2015)
 
