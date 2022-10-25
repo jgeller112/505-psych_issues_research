@@ -93,7 +93,7 @@ High false positive rate in original studies (Simmons, Nelson, & Simonsohn, 2011
 
 ## Why do we have a problem?
 
--   Researchers' Degrees of Freedom
+-   Researcher Degrees of Freedom
 
 ::: columns
 ::: {.column width="40%"}
