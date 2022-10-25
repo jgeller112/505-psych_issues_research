@@ -21,11 +21,9 @@ editor: visual
 
 # Outline
 
--   The replication crisis
+-   The replication crisis and how we got here
 
--   How did we get here?
-
--   Pregistration
+-   Preregistraion
 
     -   What
     -   Why
@@ -41,7 +39,6 @@ editor: visual
 
 </iframe>
 :::
-
 ## The Replication Crisis: A Timeline
 
 ::: column-page
